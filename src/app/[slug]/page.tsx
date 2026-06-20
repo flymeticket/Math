@@ -10,7 +10,6 @@ import {
   CheckCircle2,
   ChevronRight,
   Compass,
-  Download,
   DraftingCompass,
   ExternalLink,
   FileText,
@@ -50,13 +49,6 @@ interface PageData {
   };
 }
 
-interface UploadFile {
-  name: string;
-  label: string;
-  href: string;
-  poster?: string;
-}
-
 const commandTerms = [
   ["State", "Give a specific answer without extended working."],
   ["Calculate", "Show enough working to support a numerical answer."],
@@ -64,29 +56,6 @@ const commandTerms = [
   ["Justify", "Give mathematical reasons for each important decision."],
   ["Explain", "Connect the mathematics to clear written reasoning."],
   ["Evaluate", "Judge the strengths, limits, and accuracy of a method or model."],
-];
-
-const defaultMypResources = [
-  {
-    title: "MYP Command Terms",
-    desc: "A student-friendly guide to command terms used in MYP Maths questions and rubrics.",
-    href: "/resources/myp-command-terms.html",
-  },
-  {
-    title: "Criterion A & C Sample Page",
-    desc: "A worked assessment-style sample showing mathematical understanding and communication.",
-    href: "/resources/myp-criterion-a-c-sample.html",
-  },
-  {
-    title: "Criterion B & C Investigation Guide",
-    desc: "The Secret to Cracking Criterion B: A Step-by-Step Guide to MYP Math Investigations.",
-    href: "/resources/myp-criterion-b-c-investigation-guide.html",
-  },
-  {
-    title: "Criterion D & C Sample Page",
-    desc: "A real-life modeling sample with communication checkpoints and reflection prompts.",
-    href: "/resources/myp-criterion-d-c-sample.html",
-  },
 ];
 
 const mypTestimonials = [
@@ -1185,44 +1154,6 @@ function cleanText(value: string) {
     .replace(/[\u201c\u201d]/g, '"');
 }
 
-function formatAssetLabel(name: string) {
-  return path
-    .basename(name, path.extname(name))
-    .replace(/[-_]+/g, " ")
-    .replace(/\b(aahl|aasl|aihl|aisl|ibmyp)\b/gi, (token) => token.toUpperCase())
-    .replace(/\bIBMYP\b/g, "IB MYP")
-    .replace(/\bmarkscheme\b/gi, "Mark Scheme")
-    .replace(/\bquestion paper\b/gi, "Question Paper")
-    .replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
-
-function getPublicUploadFiles(relativePath: string, extensions: string[]): UploadFile[] {
-  const dir = path.join(process.cwd(), "public", ...relativePath.split("/"));
-  if (!fs.existsSync(dir)) return [];
-
-  return fs
-    .readdirSync(dir)
-    .filter((name) => extensions.includes(path.extname(name).toLowerCase()))
-    .sort((a, b) => a.localeCompare(b))
-    .map((name) => ({
-      name,
-      label: formatAssetLabel(name),
-      href: `/${relativePath}/${encodeURIComponent(name)}`,
-      poster: relativePath === "uploads/testimonials/videos" ? getTestimonialVideoPoster(name) : undefined,
-    }));
-}
-
-function getTestimonialVideoPoster(videoName: string) {
-  const thumbnailPath = "uploads/testimonials/thumbnails";
-  const dir = path.join(process.cwd(), "public", ...thumbnailPath.split("/"));
-  const stem = path.basename(videoName, path.extname(videoName));
-  const posterName = [`${stem}-poster.jpg`, `${stem}-poster.jpeg`, `${stem}-poster.png`, `${stem}-poster.webp`].find(
-    (name) => fs.existsSync(path.join(dir, name))
-  );
-
-  return posterName ? `/${thumbnailPath}/${encodeURIComponent(posterName)}` : undefined;
-}
-
 export async function generateStaticParams() {
   return getPages().map((page) => ({
     slug: page.slug.replace(/^\/|\/$/g, ""),
@@ -1277,14 +1208,6 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
   const coursePaperList = isDpCourse ? coursePapers[page.course.id] || [] : [];
   const courseVideos = isMypCourse ? mypVideos : isDpCourse || isIaCourse ? dpVideos : [];
   const courseFeedback = isMypCourse ? mypFeedback : isDpCourse || isIaCourse ? dpFeedback : [];
-  const courseResourceFiles = getPublicUploadFiles(`uploads/resources/pdfs/${page.course.id}`, [".pdf"]);
-  const uploadedPhotos = isMypCourse
-    ? getPublicUploadFiles("uploads/testimonials/photos", [".jpg", ".jpeg", ".png", ".webp"])
-    : [];
-  const uploadedVideos = isMypCourse
-    ? getPublicUploadFiles("uploads/testimonials/videos", [".mp4", ".webm", ".mov"])
-    : [];
-
   const testimonials = isMypCourse
     ? mypTestimonials
     : [
@@ -2950,50 +2873,28 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
               </section>
 
               <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
-                <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">View and download</p>
-                <h2 className="mt-3 text-3xl font-extrabold tracking-tight">MYP Sample Pages</h2>
-                <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                  {defaultMypResources.map((resource) => (
-                    <div key={resource.title} className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5">
-                      <FileText className="h-6 w-6 text-[#0f5b78]" />
-                      <h3 className="mt-4 font-extrabold">{resource.title}</h3>
-                      <p className="mt-2 text-sm leading-7 text-[#5d6673]">{resource.desc}</p>
-                      <div className="mt-5 flex flex-wrap gap-3">
-                        <a href={resource.href} className="rounded-lg bg-[#0f5b78] px-4 py-2 text-xs font-bold text-white">
-                          View
-                        </a>
-                        <a
-                          href={resource.href}
-                          download
-                          className="inline-flex items-center gap-1.5 rounded-lg border border-[#d8ccbc] px-4 py-2 text-xs font-bold"
-                        >
-                          <Download className="h-3.5 w-3.5" />
-                          Download
-                        </a>
-                      </div>
-                    </div>
+                <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Worked samples</p>
+                <h2 className="mt-3 text-3xl font-extrabold tracking-tight">Criterion Exemplar Papers</h2>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5d6673]">
+                  Real MYP assessment exemplars mapped to the assessment criteria. Each opens in a side-by-side
+                  viewer in a new tab.
+                </p>
+                <div className="mt-7 grid gap-3 sm:grid-cols-2">
+                  {mypPapers.map((paper) => (
+                    <a
+                      key={paper.qp}
+                      href={paperViewerHref(paper.label, paper.qp)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between gap-3 rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5 transition-colors hover:border-[#0f5b78]"
+                    >
+                      <span className="flex items-center gap-3">
+                        <FileText className="h-6 w-6 flex-shrink-0 text-[#0f5b78]" />
+                        <span className="font-extrabold">{paper.label}</span>
+                      </span>
+                      <ExternalLink className="h-4 w-4 flex-shrink-0 text-[#0f5b78]" />
+                    </a>
                   ))}
-                </div>
-
-                <div className="mt-8 rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5">
-                  <h3 className="font-extrabold">Criterion Exemplar Papers</h3>
-                  <p className="mt-1 text-sm leading-6 text-[#5d6673]">
-                    Worked MYP assessment samples. Each opens as a PDF in a new tab.
-                  </p>
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                    {mypPapers.map((paper) => (
-                      <a
-                        key={paper.qp}
-                        href={paperViewerHref(paper.label, paper.qp)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-between gap-3 rounded-lg bg-white p-4 text-sm font-semibold transition-colors hover:text-[#0f5b78]"
-                      >
-                        <span>{paper.label}</span>
-                        <ExternalLink className="h-4 w-4 flex-shrink-0 text-[#0f5b78]" />
-                      </a>
-                    ))}
-                  </div>
                 </div>
               </section>
             </>
