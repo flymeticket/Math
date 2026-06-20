@@ -8,10 +8,16 @@ import {
   ChevronRight,
   Compass,
   FileText,
+  FunctionSquare,
+  Grid3x3,
   HelpCircle,
+  Lightbulb,
   MessageCircle,
+  Shapes,
+  Sigma,
   Star,
 } from "lucide-react";
+import type { CSSProperties } from "react";
 import { site } from "./site";
 import { Reveal } from "./Reveal";
 import { TestimonialWall } from "./TestimonialWall";
@@ -53,12 +59,12 @@ const assessmentPoints = [
 ];
 
 const courses = [
-  { name: "IB MYP Maths", level: "Grades 6 to 10", link: "/ib-myp-maths/", desc: "Criteria A to D, command terms, investigations, and Standard or Extended pathway planning." },
-  { name: "Math AA SL", level: "DP Standard", link: "/ib-math-aa-sl/", desc: "Functions, algebra, trigonometry, calculus, and clean written exam technique." },
-  { name: "Math AA HL", level: "DP Higher", link: "/ib-math-aa-hl/", desc: "Proof, series, complex numbers, advanced calculus, and top-band Paper 3 strategy." },
-  { name: "Math AI SL", level: "DP Standard", link: "/ib-math-ai-sl/", desc: "Applications, statistics, modelling, finance, and technology-led problem solving." },
-  { name: "Math AI HL", level: "DP Higher", link: "/ib-math-ai-hl/", desc: "Advanced statistics, matrices, calculus, and structured Higher Level practice." },
-  { name: "Internal Assessment", level: "All DP", link: "/ib-math-ia/", desc: "Topic choice, exploration structure, criteria mastery, and final polish for the 20% IA." },
+  { name: "IB MYP Maths", level: "Grades 6 to 10", link: "/ib-myp-maths/", icon: Shapes, fg: "#0f5b78", tile: "#e2eff3", desc: "Criteria A to D, command terms, investigations, and Standard or Extended pathway planning." },
+  { name: "Math AA SL", level: "DP Standard", link: "/ib-math-aa-sl/", icon: FunctionSquare, fg: "#4a4b9c", tile: "#e8e9f8", desc: "Functions, algebra, trigonometry, calculus, and clean written exam technique." },
+  { name: "Math AA HL", level: "DP Higher", link: "/ib-math-aa-hl/", icon: Sigma, fg: "#4a4b9c", tile: "#e8e9f8", desc: "Proof, series, complex numbers, advanced calculus, and top-band Paper 3 strategy." },
+  { name: "Math AI SL", level: "DP Standard", link: "/ib-math-ai-sl/", icon: BarChart3, fg: "#b96a2e", tile: "#f7e8db", desc: "Applications, statistics, modelling, finance, and technology-led problem solving." },
+  { name: "Math AI HL", level: "DP Higher", link: "/ib-math-ai-hl/", icon: Grid3x3, fg: "#b96a2e", tile: "#f7e8db", desc: "Advanced statistics, matrices, calculus, and structured Higher Level practice." },
+  { name: "Internal Assessment", level: "All DP", link: "/ib-math-ia/", icon: Lightbulb, fg: "#9a7619", tile: "#f5ecca", desc: "Topic choice, exploration structure, criteria mastery, and final polish for the 20% IA." },
 ];
 
 const steps = [
@@ -247,26 +253,34 @@ export default function Home() {
             </div>
           </Reveal>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {courses.map((course, index) => (
-              <Reveal key={course.name} delay={index * 70} className="h-full">
-                <a
-                  href={course.link}
-                  className="group flex h-full flex-col rounded-2xl border border-[#ded2c3] bg-white p-6 transition hover:-translate-y-1 hover:border-[#0f5b78] hover:shadow-[0_20px_40px_-24px_rgba(17,17,17,0.25)]"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <h3 className="text-lg font-extrabold text-[#172033]">{course.name}</h3>
-                    <span className="rounded-lg bg-[#edf6f8] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-[#0f5b78]">
-                      {course.level}
+            {courses.map((course, index) => {
+              const Icon = course.icon;
+              return (
+                <Reveal key={course.name} delay={index * 70} className="h-full">
+                  <a
+                    href={course.link}
+                    style={{ "--ac": course.fg, "--tl": course.tile } as CSSProperties}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#ded2c3] bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-[var(--ac)] hover:shadow-[0_24px_48px_-28px_rgba(17,17,17,0.3)]"
+                  >
+                    <span className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-[var(--ac)] transition-transform duration-300 group-hover:scale-x-100" />
+                    <div className="flex items-start justify-between gap-3">
+                      <span className="grid h-12 w-12 place-items-center rounded-xl bg-[var(--tl)] text-[var(--ac)] transition-transform duration-300 group-hover:scale-110">
+                        <Icon className="h-6 w-6" />
+                      </span>
+                      <span className="rounded-full bg-[var(--tl)] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ac)]">
+                        {course.level}
+                      </span>
+                    </div>
+                    <h3 className="mt-5 text-xl font-extrabold text-[#172033]">{course.name}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-7 text-[#5d6673]">{course.desc}</p>
+                    <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-[var(--ac)]">
+                      View course
+                      <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
                     </span>
-                  </div>
-                  <p className="mt-3 flex-1 text-sm leading-7 text-[#5d6673]">{course.desc}</p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#0f5b78]">
-                    View course
-                    <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
-                  </span>
-                </a>
-              </Reveal>
-            ))}
+                  </a>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
