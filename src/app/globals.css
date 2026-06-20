@@ -17,3 +17,119 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes ax-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ax-marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.ax-marquee {
+  animation: ax-marquee 60s linear infinite;
+}
+
+.ax-marquee-reverse {
+  animation: ax-marquee-reverse 75s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ax-marquee,
+  .ax-marquee-reverse {
+    animation: none;
+  }
+}
+
+/* ===== Design v2 ("New look" toggle adds .theme-v2 to <html>) =====
+   Black & tan: teal becomes ink, navy becomes near-black, gold stays the
+   single accent. Outfit replaces Inter, one softer radius, card elevation. */
+.theme-v2 body {
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+.theme-v2 .bg-\[\#0f5b78\] {
+  background-color: #1b1b1d !important;
+}
+.theme-v2 .hover\:bg-\[\#0f5b78\]:hover,
+.theme-v2 .hover\:bg-\[\#0b4358\]:hover {
+  background-color: #000000 !important;
+}
+.theme-v2 .text-\[\#0f5b78\] {
+  color: #1b1b1d !important;
+}
+.theme-v2 .hover\:text-\[\#0f5b78\]:hover {
+  color: #000000 !important;
+}
+.theme-v2 .border-\[\#0f5b78\],
+.theme-v2 .focus\:border-\[\#0f5b78\]:focus {
+  border-color: #1b1b1d !important;
+}
+
+.theme-v2 .bg-\[\#172033\],
+.theme-v2 .bg-\[\#111827\],
+.theme-v2 .bg-\[\#0f1623\],
+.theme-v2 .bg-\[\#101827\] {
+  background-color: #141416 !important;
+}
+.theme-v2 .text-\[\#172033\] {
+  color: #18181b !important;
+}
+.theme-v2 .border-\[\#172033\],
+.theme-v2 .border-\[\#29445a\],
+.theme-v2 .border-\[\#1f2d40\] {
+  border-color: #2b2b30 !important;
+}
+
+.theme-v2 .bg-\[\#f7f4ee\] {
+  background-color: #f5f3ee !important;
+}
+
+.theme-v2 .rounded-lg {
+  border-radius: 0.9rem;
+}
+.theme-v2 .rounded-xl {
+  border-radius: 1rem;
+}
+.theme-v2 .rounded-lg.border,
+.theme-v2 .rounded-xl.border {
+  box-shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 18px 34px -22px rgba(17, 17, 17, 0.28);
+}
+
+/* Press feedback via opacity, not transform: transform would override the
+   positioning transforms (e.g. -translate-y-1/2) used by the lightbox arrows
+   and make them jump out from under the cursor, swallowing the click. */
+.theme-v2 a:active,
+.theme-v2 button:active {
+  opacity: 0.82;
+}
+
+/* Scroll-reveal entrance (toggled by the Reveal component via IntersectionObserver) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none;
+  }
+}

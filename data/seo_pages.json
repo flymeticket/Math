@@ -14,6 +14,48 @@
     }
   },
   {
+    "type": "myp_stage",
+    "course_id": "myp",
+    "slug": "/myp-1-3/",
+    "title": "MYP 1-3 Mathematics Tutor Online | Foundations for Grades 6-8",
+    "h1": "MYP 1-3 Mathematics Tutoring - Laying the Foundations",
+    "meta_desc": "MYP 1-3 Mathematics tutoring for Grades 6-8. Build number sense, algebra, spatial reasoning, and early Criteria B and D report-writing confidence.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "MYP 1-3 Maths",
+      "level": "MYP 1-3"
+    }
+  },
+  {
+    "type": "myp_stage",
+    "course_id": "myp",
+    "slug": "/myp-4-5/",
+    "title": "MYP 4-5 Maths Tutor Online | Standard and Extended Tracks",
+    "h1": "MYP 4-5 Maths Tutoring - Standard and Extended Rigor",
+    "meta_desc": "MYP 4-5 Maths tutoring for Grades 9-10. Master Standard and Extended topics including quadratics, logarithms, networks, statistics, and probability.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "MYP 4-5 Maths",
+      "level": "MYP 4-5"
+    }
+  },
+  {
+    "type": "myp_stage",
+    "course_id": "myp",
+    "slug": "/myp-enrichment/",
+    "title": "MYP Maths Enrichment Tutor Online | Grade 7 and AA HL Readiness",
+    "h1": "MYP Maths Enrichment Tutoring - The Elite Competitive Edge",
+    "meta_desc": "Advanced MYP Maths enrichment for ambitious students targeting Grade 7 and future DP AA HL readiness through proof, vectors, combinatorics, and series.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "MYP Maths Enrichment",
+      "level": "Enrichment"
+    }
+  },
+  {
     "type": "course_pillar",
     "course_id": "ai-sl",
     "slug": "/ib-math-ai-sl/",

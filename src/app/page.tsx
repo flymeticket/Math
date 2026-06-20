@@ -1,361 +1,330 @@
-import React from "react";
-import fs from "fs";
-import path from "path";
 import {
   ArrowRight,
-  BookOpen,
+  BadgeCheck,
+  BarChart3,
+  BookOpenCheck,
+  CalendarCheck,
   CheckCircle2,
   ChevronRight,
+  Compass,
+  FileText,
   HelpCircle,
-  ImageIcon,
-  Mail,
   MessageCircle,
-  Phone,
-  PlayCircle,
+  Star,
 } from "lucide-react";
 import { site } from "./site";
+import { Reveal } from "./Reveal";
+import { TestimonialWall } from "./TestimonialWall";
+import { allVideos, allFeedback } from "./testimonials";
 
-interface TestimonialAsset {
-  href: string;
-  label: string;
-  poster?: string;
-}
+const stats = [
+  ["+2", "Average grade jump"],
+  ["95%", "Reach a 6 or 7"],
+  ["25+", "Countries taught"],
+  ["1-on-1", "Every lesson"],
+];
+
+const differentiators = [
+  {
+    icon: BadgeCheck,
+    title: "Taught the way the IB marks",
+    text: "Lessons are built around command terms, the assessment criteria, and real mark schemes, so students earn the marks examiners actually award.",
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=70",
+  },
+  {
+    icon: Compass,
+    title: "One plan per student",
+    text: "We start with a diagnostic, find the real gaps, and shape every session around the student's syllabus, school deadlines, and grade target.",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=70",
+  },
+  {
+    icon: BookOpenCheck,
+    title: "MYP to DP, fully covered",
+    text: "From MYP investigations to AA HL proof and the Internal Assessment, one tutor carries the student through every stage of IB Maths.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=70",
+  },
+];
+
+const assessmentPoints = [
+  "Command-term coaching so students know what state, justify, and evaluate require.",
+  "Criterion B and D structure for investigations, modelling, and reflection.",
+  "Sample papers opened beside their mark schemes, the way examiners read them.",
+  "Parent updates that show topic gaps and assessment readiness, not just attendance.",
+];
 
 const courses = [
-  {
-    name: "IB MYP Maths",
-    level: "Grades 6-10",
-    link: "/ib-myp-maths/",
-    desc: "Criterion A-D support, command terms, investigations, and Standard or Extended pathway planning.",
-  },
-  {
-    name: "IB Math AISL",
-    level: "DP Standard",
-    link: "/ib-math-ai-sl/",
-    desc: "Applications, statistics, modeling, finance, technology, and exam-ready problem solving.",
-  },
-  {
-    name: "IB Math AIHL",
-    level: "DP Higher",
-    link: "/ib-math-ai-hl/",
-    desc: "Advanced applications, calculus, statistics, matrices, and structured HL practice.",
-  },
-  {
-    name: "IB Math AASL",
-    level: "DP Standard",
-    link: "/ib-math-aa-sl/",
-    desc: "Functions, algebra, trigonometry, calculus, and clean written exam technique.",
-  },
-  {
-    name: "IB Math AAHL",
-    level: "DP Higher",
-    link: "/ib-math-aa-hl/",
-    desc: "Proof, series, complex numbers, advanced calculus, and top-band exam strategy.",
-  },
-  {
-    name: "IB Math IA Guidance",
-    level: "DP IA",
-    link: "/ib-math-ia/",
-    desc: "Topic refinement, exploration structure, modeling, communication, and final polish.",
-  },
+  { name: "IB MYP Maths", level: "Grades 6 to 10", link: "/ib-myp-maths/", desc: "Criteria A to D, command terms, investigations, and Standard or Extended pathway planning." },
+  { name: "Math AA SL", level: "DP Standard", link: "/ib-math-aa-sl/", desc: "Functions, algebra, trigonometry, calculus, and clean written exam technique." },
+  { name: "Math AA HL", level: "DP Higher", link: "/ib-math-aa-hl/", desc: "Proof, series, complex numbers, advanced calculus, and top-band Paper 3 strategy." },
+  { name: "Math AI SL", level: "DP Standard", link: "/ib-math-ai-sl/", desc: "Applications, statistics, modelling, finance, and technology-led problem solving." },
+  { name: "Math AI HL", level: "DP Higher", link: "/ib-math-ai-hl/", desc: "Advanced statistics, matrices, calculus, and structured Higher Level practice." },
+  { name: "Internal Assessment", level: "All DP", link: "/ib-math-ia/", desc: "Topic choice, exploration structure, criteria mastery, and final polish for the 20% IA." },
+];
+
+const steps = [
+  { icon: CalendarCheck, title: "Book a free trial", text: "Share the student's grade, course, and upcoming assessment." },
+  { icon: FileText, title: "Get a tailored plan", text: "We diagnose the gaps and map a clear route to the target grade." },
+  { icon: BookOpenCheck, title: "Weekly 1-on-1 coaching", text: "Method, notation, communication, and exam technique, every week." },
+  { icon: BarChart3, title: "Track the results", text: "Parents get progress updates tied to real school assessments." },
 ];
 
 const faqs = [
   {
-    question: "Do you teach IB MYP Maths from Grade 6 to Grade 10?",
+    question: "Which IB Maths courses do you teach?",
     answer:
-      "Yes. Lessons cover MYP 1 to MYP 5, including Standard and Extended pathways, Criterion A, B, C, and D support, and school-specific assessment preparation.",
+      "All of them. MYP Maths from Grade 6 to Grade 10 (Standard and Extended), and every DP pathway: Analysis and Approaches SL and HL, Applications and Interpretation SL and HL, plus full Internal Assessment support.",
   },
   {
-    question: "Can students book only a free trial first?",
+    question: "Are lessons one-on-one?",
     answer:
-      "Yes. Families can begin with a free trial session, share the student's current topics and assessment needs, and then receive a recommended study plan.",
+      "Yes. Every session is individual and built around the student. We work from their current topics, school tasks, and grade target rather than a fixed script.",
   },
   {
-    question: "Do you help with MYP investigations and reports?",
+    question: "Can we start with a free trial?",
     answer:
-      "Yes. Students get support with pattern investigations, notation, written communication, reflections, real-life modeling, and rubric alignment.",
+      "Yes. Begin with a free trial lesson. Share the student's course and current challenges, and you will receive a recommended plan before committing to anything.",
   },
   {
-    question: "Do you tutor AI SL, AI HL, AA SL, and AA HL?",
+    question: "Do you really teach the way IB examiners mark?",
     answer:
-      "Yes. The program supports MYP Maths and all major DP pathways, including Applications and Interpretation and Analysis and Approaches.",
+      "That is the core of our coaching. Students learn what command terms like state, justify, and evaluate require, how the criteria and mark bands work, and how to pick up method marks from official mark schemes.",
+  },
+  {
+    question: "How do you help with the Internal Assessment?",
+    answer:
+      "We guide the full exploration: choosing a personal, high-scoring topic, structuring the write-up, matching the mathematics to the course level, and avoiding the criteria mistakes that cost marks on the 20% IA.",
+  },
+  {
+    question: "What if my child is behind or anxious about Maths?",
+    answer:
+      "We start by rebuilding the foundations the current grade is hiding, then add exam habits and calm routines. The plan moves at the student's pace so confidence returns before the high-stakes years.",
+  },
+  {
+    question: "Do you tutor students in my country and time zone?",
+    answer:
+      "Yes. Lessons are online and scheduled around local school calendars and assessment windows, so we work with IB families across time zones worldwide.",
+  },
+  {
+    question: "How are lessons delivered and progress shared?",
+    answer:
+      "Sessions run online with shared notes and resources. Parents receive updates on current topic gaps, assessment readiness, and the next steps after each block of lessons.",
   },
 ];
 
-function formatAssetLabel(name: string) {
-  return path
-    .basename(name, path.extname(name))
-    .replace(/[-_]+/g, " ")
-    .replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
-
-function getTestimonialFiles(folder: "photos" | "videos", extensions: string[]): TestimonialAsset[] {
-  const relativePath = `uploads/testimonials/${folder}`;
-  const dir = path.join(process.cwd(), "public", ...relativePath.split("/"));
-
-  if (!fs.existsSync(dir)) return [];
-
-  return fs
-    .readdirSync(dir)
-    .filter((name) => extensions.includes(path.extname(name).toLowerCase()))
-    .sort((a, b) => a.localeCompare(b))
-    .map((name) => ({
-      href: `/${relativePath}/${encodeURIComponent(name)}`,
-      label: formatAssetLabel(name),
-      poster: folder === "videos" ? getTestimonialVideoPoster(name) : undefined,
-    }));
-}
-
-function getTestimonialVideoPoster(videoName: string) {
-  const thumbnailPath = "uploads/testimonials/thumbnails";
-  const dir = path.join(process.cwd(), "public", ...thumbnailPath.split("/"));
-  const stem = path.basename(videoName, path.extname(videoName));
-  const posterName = [`${stem}-poster.jpg`, `${stem}-poster.jpeg`, `${stem}-poster.png`, `${stem}-poster.webp`].find(
-    (name) => fs.existsSync(path.join(dir, name))
-  );
-
-  return posterName ? `/${thumbnailPath}/${encodeURIComponent(posterName)}` : undefined;
-}
-
 export default function Home() {
-  const testimonialVideos = getTestimonialFiles("videos", [".mp4", ".webm", ".mov"]);
-  const testimonialPhotos = getTestimonialFiles("photos", [".jpg", ".jpeg", ".png", ".webp"]);
-
   return (
     <div className="bg-[#f7f4ee] text-[#172033]">
-      <section className="relative min-h-[690px] overflow-hidden bg-[#111827]">
+      <section className="relative overflow-hidden bg-[#111827]">
         <img
           src="/images/ib-maths-tutoring-hero.png"
-          alt="Online IB mathematics tutoring desk with laptop, tablet, and notes"
+          alt="Online IB mathematics tutoring workspace with laptop, tablet, and notes"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.92)_0%,rgba(15,23,42,0.72)_43%,rgba(15,23,42,0.2)_100%)]" />
-        <div className="relative z-10 mx-auto flex min-h-[690px] max-w-6xl items-center px-6 py-20">
-          <div className="max-w-2xl text-white">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-cyan-100">
-              IB Maths tutoring for MYP and DP
-            </div>
-            <h1 className="text-4xl font-extrabold leading-[1.02] tracking-tight md:text-6xl">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.94)_0%,rgba(15,23,42,0.78)_45%,rgba(15,23,42,0.35)_100%)]" />
+        <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-20 text-white md:pb-32 md:pt-24">
+          <Reveal className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-cyan-100">
+              Specialist IB Maths tuition
+            </span>
+            <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
               IB Maths tutoring that teaches the rubric, not just the topic.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-200 md:text-lg">
-              Clear online lessons for MYP, AI, AA, and IA students. We focus on command terms, working style,
-              communication, and the exact habits that move grades.
+              Clear one-on-one lessons for MYP, AA, AI, and the Internal Assessment, focused on command terms, method,
+              and the exam habits that move grades.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href={site.bookingHref}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#f5b84b] px-6 py-3.5 text-sm font-extrabold text-[#172033] transition-colors hover:bg-[#e7a936]"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#f5b84b] px-6 py-3.5 text-sm font-extrabold text-[#172033] transition hover:bg-[#e7a936] active:translate-y-px"
               >
-                Book a Free Trial
+                Book a free trial
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="/ib-myp-maths/"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-white/15"
+                href="#courses"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/20 active:translate-y-px"
               >
-                See MYP Resources
+                Explore courses
                 <ChevronRight className="h-4 w-4" />
               </a>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
-      <section className="border-b border-[#e8e1d6] bg-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px border-x border-[#e8e1d6] bg-[#e8e1d6] md:grid-cols-4">
-          {[
-            ["+2", "Avg. IB grade improvement"],
-            ["95%", "Score 6 or 7"],
-            ["25+", "Countries"],
-            ["100+", "Cities served"],
-          ].map(([value, label]) => (
-            <div key={label} className="bg-white px-6 py-7">
-              <div className="text-3xl font-extrabold text-[#0f5b78]">{value}</div>
-              <div className="mt-1 text-sm font-semibold text-[#5d6673]">{label}</div>
-            </div>
-          ))}
-        </div>
+      <section className="border-b border-[#e8e1d6] bg-white py-10">
+        <Reveal className="mx-auto max-w-6xl px-6">
+          <div className="flex items-center justify-center gap-2 text-sm font-semibold text-[#5d6673]">
+            <span className="flex text-[#d99021]">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-current" />
+              ))}
+            </span>
+            Trusted by IB students and parents across 25+ countries
+          </div>
+          <div className="mt-7 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#e8e1d6] bg-[#e8e1d6] sm:grid-cols-4">
+            {stats.map(([value, label]) => (
+              <div key={label} className="bg-white px-6 py-7 text-center">
+                <div className="text-3xl font-extrabold text-[#0f5b78]">{value}</div>
+                <div className="mt-1 text-sm font-semibold text-[#5d6673]">{label}</div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </section>
 
       <section className="py-20 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Why it works</p>
-              <h2 className="mt-4 text-3xl font-extrabold tracking-tight md:text-5xl">
-                Students need structure before speed.
-              </h2>
-            </div>
-            <div className="space-y-6 text-base leading-8 text-[#465160]">
-              <p>
-                A lot of IB Maths support looks like more worksheets. That is not enough. MYP students need to
-                understand command terms and written criteria. DP students need clean methods, exam timing, and accurate
-                communication.
-              </p>
-              <div className="grid gap-4 sm:grid-cols-3">
-                {[
-                  ["Diagnose", "Find the gaps behind the current grade."],
-                  ["Coach", "Teach method, notation, and explanation."],
-                  ["Review", "Track school tasks and assessment readiness."],
-                ].map(([title, body]) => (
-                  <div key={title} className="rounded-lg border border-[#e0d7ca] bg-white p-5">
-                    <h3 className="font-extrabold text-[#172033]">{title}</h3>
-                    <p className="mt-2 text-sm leading-6 text-[#5d6673]">{body}</p>
+          <Reveal className="max-w-2xl">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Why IB Learners Academy</p>
+            <h2 className="mt-4 text-3xl font-extrabold tracking-tight md:text-5xl">
+              Most tutoring just adds worksheets. We coach how the IB actually marks.
+            </h2>
+          </Reveal>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {differentiators.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <Reveal key={item.title} delay={index * 90} className="h-full">
+                  <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#e0d7ca] bg-white transition hover:-translate-y-1 hover:shadow-[0_20px_40px_-24px_rgba(17,17,17,0.3)]">
+                    <div className="relative h-40 overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt="IB Maths tutoring"
+                        className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                      />
+                      <span className="absolute bottom-3 left-5 grid h-11 w-11 place-items-center rounded-xl bg-[#0f5b78] text-white shadow-lg">
+                        <Icon className="h-5 w-5" />
+                      </span>
+                    </div>
+                    <div className="p-6 md:p-7">
+                      <h3 className="text-lg font-extrabold">{item.title}</h3>
+                      <p className="mt-2.5 text-sm leading-7 text-[#5d6673]">{item.text}</p>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
+                </Reveal>
+              );
+            })}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#172033] py-20 text-white md:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2">
+          <Reveal className="overflow-hidden rounded-3xl border border-white/10">
+            <img
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1100&q=70"
+              alt="Student studying mathematics with a laptop and notes"
+              className="h-[300px] w-full object-cover transition duration-700 hover:scale-105 md:h-[420px]"
+            />
+          </Reveal>
+          <Reveal delay={120}>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#f5b84b]">Built for IB assessment</p>
+            <h2 className="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">
+              The marks come from communication, not just the right answer.
+            </h2>
+            <div className="mt-7 space-y-4">
+              {assessmentPoints.map((point) => (
+                <div key={point} className="flex gap-3 text-sm leading-7 text-slate-200">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-[#f5b84b]" />
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       <section id="courses" className="bg-[#efe8dd] py-20 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Programs</p>
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-5xl">Choose the right IB path</h2>
+          <Reveal>
+            <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+              <h2 className="max-w-xl text-3xl font-extrabold tracking-tight md:text-5xl">Choose your IB Maths pathway</h2>
+              <p className="max-w-md text-sm leading-7 text-[#5d6673]">
+                Every course page covers the syllabus, sample papers with mark schemes, and location-specific support.
+              </p>
             </div>
-            <p className="max-w-md text-sm leading-7 text-[#5d6673]">
-              Every course page includes tutoring focus, assessment priorities, and location-specific support.
-            </p>
-          </div>
-
-          <div className="divide-y divide-[#ded2c3] overflow-hidden rounded-lg border border-[#ded2c3] bg-white">
-            {courses.map((course) => (
-              <a
-                key={course.name}
-                href={course.link}
-                className="grid gap-4 p-6 transition-colors hover:bg-[#fbf8f2] md:grid-cols-[1fr_140px_32px] md:items-center"
-              >
-                <div>
-                  <h3 className="text-xl font-extrabold text-[#172033]">{course.name}</h3>
-                  <p className="mt-2 text-sm leading-6 text-[#5d6673]">{course.desc}</p>
-                </div>
-                <span className="w-fit rounded-lg bg-[#edf6f8] px-3 py-2 text-xs font-bold text-[#0f5b78]">
-                  {course.level}
-                </span>
-                <ChevronRight className="h-5 w-5 text-[#0f5b78]" />
-              </a>
+          </Reveal>
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {courses.map((course, index) => (
+              <Reveal key={course.name} delay={index * 70} className="h-full">
+                <a
+                  href={course.link}
+                  className="group flex h-full flex-col rounded-2xl border border-[#ded2c3] bg-white p-6 transition hover:-translate-y-1 hover:border-[#0f5b78] hover:shadow-[0_20px_40px_-24px_rgba(17,17,17,0.25)]"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="text-lg font-extrabold text-[#172033]">{course.name}</h3>
+                    <span className="rounded-lg bg-[#edf6f8] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-[#0f5b78]">
+                      {course.level}
+                    </span>
+                  </div>
+                  <p className="mt-3 flex-1 text-sm leading-7 text-[#5d6673]">{course.desc}</p>
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#0f5b78]">
+                    View course
+                    <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
+                </a>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
       <section className="py-20 md:py-24">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2 lg:items-center">
-          <div className="overflow-hidden rounded-lg border border-[#ded2c3] bg-white">
-            <img
-              src="/images/ib-maths-tutoring-hero.png"
-              alt="IB Maths online lesson materials"
-              className="h-[420px] w-full object-cover object-right"
-            />
-          </div>
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">MYP focus</p>
-            <h2 className="mt-4 text-3xl font-extrabold tracking-tight md:text-5xl">
-              Built for the way IB schools assess maths.
-            </h2>
-            <div className="mt-7 space-y-4">
-              {[
-                "Command-term coaching so students know what state, verify, justify, and evaluate require.",
-                "Criterion B and D investigation structure for reports, patterns, modeling, and reflection.",
-                "Parent updates that show current topic gaps, school assessment readiness, and next steps.",
-              ].map((item) => (
-                <div key={item} className="flex gap-3 text-sm leading-7 text-[#465160]">
-                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-[#0f5b78]" />
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
+        <div className="mx-auto max-w-6xl px-6">
+          <Reveal>
+            <h2 className="max-w-xl text-3xl font-extrabold tracking-tight md:text-5xl">How a student gets started</h2>
+          </Reveal>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <Reveal key={step.title} delay={index * 80} className="h-full">
+                  <div className="h-full rounded-2xl border border-[#e0d7ca] bg-white p-6 transition hover:-translate-y-1">
+                    <span className="text-sm font-extrabold text-[#c9a36a]">{String(index + 1).padStart(2, "0")}</span>
+                    <div className="mt-3 grid h-11 w-11 place-items-center rounded-xl bg-[#172033] text-[#f5b84b]">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="mt-4 font-extrabold">{step.title}</h3>
+                    <p className="mt-2 text-sm leading-7 text-[#5d6673]">{step.text}</p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {(testimonialVideos.length > 0 || testimonialPhotos.length > 0) && (
-        <section className="bg-[#172033] py-20 text-white md:py-24">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-              <div>
-                <p className="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-[#f5b84b]">
-                  <PlayCircle className="h-4 w-4" />
-                  Testimonials
-                </p>
-                <h2 className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight md:text-5xl">
-                  Student and parent results, shown directly.
-                </h2>
-              </div>
-              <p className="max-w-md text-sm leading-7 text-slate-300">
-                Real WhatsApp feedback and video testimonials from families who worked through IB Maths with structured
-                support.
-              </p>
-            </div>
-
-            {testimonialVideos.length > 0 && (
-              <div className="grid gap-5 lg:grid-cols-3">
-                {testimonialVideos.map((video) => (
-                  <div key={video.href} className="overflow-hidden rounded-lg border border-white/10 bg-white/[0.06]">
-                    <video
-                      src={video.href}
-                      poster={video.poster}
-                      controls
-                      preload="metadata"
-                      className="aspect-video w-full bg-black"
-                    />
-                    <div className="flex items-center gap-2 px-4 py-3 text-sm font-bold text-slate-100">
-                      <PlayCircle className="h-4 w-4 text-[#f5b84b]" />
-                      Video testimonial
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {testimonialPhotos.length > 0 && (
-              <div className="mt-10">
-                <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-slate-300">
-                  <ImageIcon className="h-4 w-4 text-[#f5b84b]" />
-                  WhatsApp feedback
-                </div>
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                  {testimonialPhotos.map((photo) => (
-                    <a
-                      key={photo.href}
-                      href={photo.href}
-                      className="group overflow-hidden rounded-lg border border-white/10 bg-white/[0.06]"
-                    >
-                      <img
-                        src={photo.href}
-                        alt={photo.label}
-                        loading="lazy"
-                        className="h-64 w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-                      />
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
+      <section className="bg-[#172033] py-20 text-white md:py-24">
+        <Reveal className="mx-auto mb-10 max-w-6xl px-6">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <h2 className="max-w-2xl text-3xl font-extrabold tracking-tight md:text-5xl">
+              Student and parent results, shown directly.
+            </h2>
+            <p className="max-w-md text-sm leading-7 text-slate-300">
+              Real video testimonials and WhatsApp feedback from MYP and DP families. Tap any clip to play it full size.
+            </p>
           </div>
-        </section>
-      )}
+        </Reveal>
+        <TestimonialWall videos={allVideos} feedback={allFeedback} layout="marquee" />
+      </section>
 
       <section className="bg-white py-20 md:py-24">
-        <div className="mx-auto max-w-4xl px-6">
-          <div className="mb-10 text-center">
+        <div className="mx-auto max-w-3xl px-6">
+          <Reveal className="mb-10 text-center">
             <div className="mb-4 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">
               <HelpCircle className="h-4 w-4" />
               FAQ
             </div>
             <h2 className="text-3xl font-extrabold tracking-tight md:text-5xl">Questions families ask first</h2>
-          </div>
+          </Reveal>
           <div className="space-y-3">
             {faqs.map((item) => (
-              <details key={item.question} className="group rounded-lg border border-[#ded2c3] bg-[#fbf8f2] p-5">
+              <details key={item.question} className="group rounded-2xl border border-[#ded2c3] bg-[#fbf8f2] p-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-extrabold">
                   {item.question}
-                  <ChevronRight className="h-5 w-5 text-[#0f5b78] transition-transform group-open:rotate-90" />
+                  <ChevronRight className="h-5 w-5 flex-shrink-0 text-[#0f5b78] transition-transform group-open:rotate-90" />
                 </summary>
                 <p className="mt-4 text-sm leading-7 text-[#5d6673]">{item.answer}</p>
               </details>
@@ -364,38 +333,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="bg-[#172033] py-20 text-white md:py-24">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1fr_0.85fr] lg:items-center">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#f5b84b]">Book a session</p>
-            <h2 className="mt-4 text-3xl font-extrabold tracking-tight md:text-5xl">
-              Start with one focused trial class.
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300">
-              Share the student's grade, syllabus, and upcoming assessment. We will recommend the tutor, pacing, and
-              first practice plan.
-            </p>
-          </div>
-          <div className="grid gap-3 rounded-lg border border-white/10 bg-white/[0.06] p-5">
-            <a href={site.phoneHref} className="flex items-center gap-3 rounded-lg bg-white px-4 py-3 font-bold text-[#172033]">
-              <Phone className="h-5 w-5 text-[#0f5b78]" />
-              {site.phoneLabel}
-            </a>
-            <a href={site.emailHref} className="flex items-center gap-3 rounded-lg bg-white px-4 py-3 font-bold text-[#172033]">
-              <Mail className="h-5 w-5 text-[#0f5b78]" />
-              {site.email}
+      <section id="contact" className="relative overflow-hidden bg-[#0f5b78] py-20 text-white md:py-24">
+        <img
+          src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1600&q=70"
+          alt="Mathematics equations on a chalkboard"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,91,120,0.78),rgba(12,58,77,0.88))]" />
+        <Reveal className="relative mx-auto max-w-3xl px-6 text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight md:text-5xl">Start with one focused trial class.</h2>
+          <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-cyan-50">
+            Share the student's grade, syllabus, and next assessment. We will recommend the tutor, the pacing, and a
+            first practice plan.
+          </p>
+          <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href={site.bookingHref}
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#f5b84b] px-6 py-3.5 text-sm font-extrabold text-[#172033] transition hover:bg-[#e7a936] active:translate-y-px"
+            >
+              Book a free trial
+              <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href={site.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg bg-[#f5b84b] px-4 py-3 font-extrabold text-[#172033]"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/20 active:translate-y-px"
             >
-              <MessageCircle className="h-5 w-5" />
-              WhatsApp for a trial
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp us
             </a>
           </div>
-        </div>
+        </Reveal>
       </section>
     </div>
   );

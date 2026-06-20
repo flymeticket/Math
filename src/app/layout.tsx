@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import { Mail, Phone } from "lucide-react";
 import "./globals.css";
 import { BrandLogo } from "./BrandLogo";
+import { ThemeToggle } from "./ThemeToggle";
+import { MobileMenu } from "./MobileMenu";
 import { site } from "./site";
 
 const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Axis IB | MYP, AI SL/HL, AA SL/HL | #1 Rated IB Math Tuition",
+  title: "IB Learners Academy | MYP, AA & AI Maths | Expert IB Tuition",
   description:
     "Top-rated IB Maths tutor offering expert online tuition for MYP Maths, AI SL/HL, AA SL/HL and IA guidance.",
   icons: {
@@ -31,15 +34,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${outfit.variable}`}>
       <body className={`${inter.className} min-h-screen flex flex-col bg-[#f7f4ee] text-[#172033]`}>
-        <header className="sticky top-0 z-50 border-b border-[#e8e1d6] bg-white/92 backdrop-blur">
-          <div className="container mx-auto flex max-w-6xl items-center justify-between gap-5 px-6 py-4">
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{if(localStorage.getItem('ax-theme')==='v2'){document.documentElement.classList.add('theme-v2')}}catch(e){}})()",
+          }}
+        />
+        <header className="sticky top-0 z-50 border-b border-[#e8e1d6] bg-white/95 backdrop-blur">
+          <div className="container mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
             <BrandLogo />
 
-            <nav className="hidden items-center gap-6 text-sm font-semibold lg:flex">
+            <nav className="hidden items-center gap-5 text-sm font-semibold lg:flex">
               {navItems.map((item) => (
-                <a key={item.href} href={item.href} className="text-[#3b4657] transition-colors hover:text-[#0f5b78]">
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="whitespace-nowrap text-[#3b4657] transition-colors hover:text-[#0f5b78]"
+                >
                   {item.label}
                 </a>
               ))}
@@ -56,12 +69,16 @@ export default function RootLayout({
               </a>
             </div>
 
-            <a
-              href={site.bookingHref}
-              className="rounded-lg bg-[#0f5b78] px-5 py-2.5 text-xs font-bold text-white transition-colors hover:bg-[#0b4358]"
-            >
-              Free Trial
-            </a>
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <a
+                href={site.bookingHref}
+                className="rounded-lg bg-[#0f5b78] px-4 py-2.5 text-xs font-bold text-white transition-colors hover:bg-[#0b4358] sm:px-5"
+              >
+                Free Trial
+              </a>
+              <MobileMenu />
+            </div>
           </div>
         </header>
 

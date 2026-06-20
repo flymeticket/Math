@@ -28,3 +28,9 @@ next-dev.*.log
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original asset drop (already copied into /public/papers and /public/testimonials)
+/public/IB_Assets
+
+# Local editor / preview tooling
+/.claude

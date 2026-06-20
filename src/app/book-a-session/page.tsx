@@ -3,7 +3,7 @@ import { ArrowRight, CalendarCheck, CheckCircle2, Mail, MessageCircle, Phone } f
 import { site } from "../site";
 
 export const metadata: Metadata = {
-  title: "Book a Free IB Maths Trial Session | Axis IB",
+  title: "Book a Free IB Maths Trial Session | IB Learners Academy",
   description:
     "Book a free IB Maths trial session for MYP, AI SL, AI HL, AA SL, AA HL, or IA guidance.",
 };

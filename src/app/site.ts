@@ -1,5 +1,5 @@
 export const site = {
-  brandName: "Axis IB",
+  brandName: "IB Learners Academy",
   phoneLabel: "+91 79772 35091",
   phoneHref: "tel:+917977235091",
   whatsappHref:
