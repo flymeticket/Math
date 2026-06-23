@@ -49,8 +49,12 @@ export default function PaperViewerPage({
         </span>
       </div>
 
-      <div className="grid flex-1 select-none gap-2 p-2 lg:grid-cols-2">
-        <div className="flex flex-col overflow-hidden rounded-lg border border-white/10 bg-white/5">
+      <div className={`grid flex-1 select-none gap-2 p-2 ${ms ? "lg:grid-cols-2" : ""}`}>
+        <div
+          className={`flex flex-col overflow-hidden rounded-lg border border-white/10 bg-white/5 ${
+            ms ? "" : "mx-auto w-full max-w-5xl"
+          }`}
+        >
           <div className="flex items-center gap-2 border-b border-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.14em] text-[#9fd6ea]">
             <FileText className="h-4 w-4" />
             Question Paper
@@ -58,33 +62,23 @@ export default function PaperViewerPage({
           <iframe
             title="Question paper"
             src={`${qp}${PDF_PARAMS}`}
-            className="h-[70vh] w-full flex-1 bg-white lg:h-[82vh]"
+            className="h-[78vh] w-full flex-1 bg-white lg:h-[84vh]"
           />
         </div>
 
-        <div className="flex flex-col overflow-hidden rounded-lg border border-white/10 bg-white/5">
-          <div className="flex items-center gap-2 border-b border-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.14em] text-[#f5d79b]">
-            <CheckCircle2 className="h-4 w-4" />
-            Answer Key / Mark Scheme
-          </div>
-          {ms ? (
+        {ms && (
+          <div className="flex flex-col overflow-hidden rounded-lg border border-white/10 bg-white/5">
+            <div className="flex items-center gap-2 border-b border-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.14em] text-[#f5d79b]">
+              <CheckCircle2 className="h-4 w-4" />
+              Answer Key / Mark Scheme
+            </div>
             <iframe
               title="Mark scheme"
               src={`${ms}${PDF_PARAMS}`}
-              className="h-[70vh] w-full flex-1 bg-white lg:h-[82vh]"
+              className="h-[78vh] w-full flex-1 bg-white lg:h-[84vh]"
             />
-          ) : (
-            <div className="flex flex-1 items-center justify-center p-8 text-center lg:min-h-[82vh]">
-              <div className="max-w-xs">
-                <p className="text-sm font-bold text-slate-200">Mark scheme not published</p>
-                <p className="mt-2 text-sm leading-6 text-slate-400">
-                  This Standard Level sample is provided as a question paper only. Worked mark schemes accompany the
-                  Higher Level papers.
-                </p>
-              </div>
-            </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

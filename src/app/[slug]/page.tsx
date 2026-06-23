@@ -27,6 +27,7 @@ import { SiteNav } from "../SiteNav";
 import { dpCourseInfo, dpSyllabus, dpHours } from "../dp-syllabus";
 import { coursePapers, mypPapers, paperViewerHref } from "../papers";
 import { TestimonialWall } from "../TestimonialWall";
+import { SchoolsMarquee } from "../SchoolsMarquee";
 import { mypVideos, dpVideos, mypFeedback, dpFeedback } from "../testimonials";
 
 const dataPath = path.join(process.cwd(), "data", "seo_pages.json");
@@ -48,30 +49,6 @@ interface PageData {
     level: string;
   };
 }
-
-const commandTerms = [
-  ["State", "Give a specific answer without extended working."],
-  ["Calculate", "Show enough working to support a numerical answer."],
-  ["Verify", "Confirm a result using substitution, evidence, or a second method."],
-  ["Justify", "Give mathematical reasons for each important decision."],
-  ["Explain", "Connect the mathematics to clear written reasoning."],
-  ["Evaluate", "Judge the strengths, limits, and accuracy of a method or model."],
-];
-
-const mypTestimonials = [
-  {
-    text: "The MYP command-term coaching made school tasks much easier. I finally understood what justify and verify were asking me to do.",
-    author: "MYP 3 Student",
-  },
-  {
-    text: "My daughter moved from a 4 to a 6 after the tutor broke down Criteria B and C into a repeatable report-writing structure.",
-    author: "Parent of MYP 4 Student",
-  },
-  {
-    text: "The investigation framework helped me organize patterns, tables, formulas, and reflections without feeling lost.",
-    author: "MYP 5 Extended Maths Student",
-  },
-];
 
 const mypSyllabus = [
   {
@@ -283,8 +260,6 @@ const mypAcademicStages = [
   },
 ];
 
-const commandTermsPdfHref = "/papers/myp/MYP_Command_Terms.pdf";
-
 const myp13KeyConcepts = [
   {
     title: "Form",
@@ -306,26 +281,37 @@ const myp13GlobalContextExamples = [
   "Connect Measurement, Patterns, Space, Change, and Equivalence to authentic classroom tasks.",
 ];
 
-const myp13CriteriaRows = [
+const myp13CriteriaRows: {
+  criterion: string;
+  meaning: string;
+  support: string;
+  paperHref?: string;
+  paperNote?: string;
+}[] = [
   {
     criterion: "Criterion A: Knowing & Understanding",
     meaning: "Traditional math skills, formulas, and classroom tests.",
     support: "Mastering mental math, algebraic manipulation, and exam time management.",
+    paperHref: "/papers/myp/Criterion_A_Knowing_and_Understanding.pdf",
   },
   {
     criterion: "Criterion B: Investigating Patterns",
     meaning: "Finding a predictable mathematical pattern or rule from a set of data.",
     support: "Teaching the step-by-step logic needed to find and verify a mathematical formula.",
+    paperHref: "/papers/myp/Criterion_B_Investigating_Patterns.pdf",
   },
   {
     criterion: "Criterion C: Communicating",
     meaning: "Using correct math vocabulary, notation, forms, and labeled diagrams.",
     support: "Reviewing written work so students do not lose marks for sloppy notation or missing units.",
+    paperNote:
+      "It has no standalone exam paper. It is built into every test and report graded under Criteria A, B, and D, and judges how clearly a student structures their mathematical logic, uses correct notation and symbols, and labels units and diagrams.",
   },
   {
     criterion: "Criterion D: Applying Mathematics in real-life contexts",
     meaning: "Taking a real-world scenario, such as architecture or finance, and building a math model.",
     support: "Guiding students to reflect on whether their mathematical results make sense in real life.",
+    paperHref: "/papers/myp/Criterion_D_Applying_Mathematics.pdf",
   },
 ];
 
@@ -1049,7 +1035,7 @@ const dpStrategy = [
   {
     title: "Dissecting Authentic IB Past Papers",
     icon: BookOpenCheck,
-    body: "IB exam questions are notoriously convoluted and rarely look like standard textbook problems. We systematically break down past papers to train Command Term Recognition, knowing exactly what examiners expect from terms like hence, show that, or justify. We study official IB mark schemes so students learn how to pick up method marks even after an early calculation slip.",
+    body: "IB exam questions are notoriously convoluted and rarely look like standard textbook problems. We systematically break down past papers so students know exactly what each question is asking for and how examiners award marks. We study official IB mark schemes so students learn how to pick up method marks even after an early calculation slip.",
   },
 ];
 
@@ -1208,19 +1194,6 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
   const coursePaperList = isDpCourse ? coursePapers[page.course.id] || [] : [];
   const courseVideos = isMypCourse ? mypVideos : isDpCourse || isIaCourse ? dpVideos : [];
   const courseFeedback = isMypCourse ? mypFeedback : isDpCourse || isIaCourse ? dpFeedback : [];
-  const testimonials = isMypCourse
-    ? mypTestimonials
-    : [
-        {
-          text: `The tutoring for ${page.course.name} made the course feel structured. The lesson notes and exam strategy were easy to follow.`,
-          author: `Student in ${locationLabel}`,
-        },
-        {
-          text: "The study plan helped my son gain confidence and improve by two grades.",
-          author: "Parent Review",
-        },
-      ];
-
   return (
     <div className="bg-[#f7f4ee] text-[#172033]">
       <section className="relative overflow-hidden bg-[#111827]">
@@ -1625,38 +1598,44 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
                         Mastering the 4 Math Assessment Criteria
                       </h3>
                       <p className="mt-3 max-w-3xl text-sm leading-7 text-[#465160]">
-                        I translate the official IB rubrics into student-friendly goals and coach Command Terms Mastery,
-                        so students know exactly what an examiner wants when a question asks them to verify, justify, or
-                        state.
+                        I translate the official IB rubrics into student-friendly goals, so students know exactly what an
+                        examiner is looking for and how the marks are awarded for each criterion.
                       </p>
                     </div>
-                    <a
-                      href={paperViewerHref("MYP Command Terms", commandTermsPdfHref)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0f5b78] px-4 py-3 text-xs font-extrabold uppercase tracking-[0.12em] text-white"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      View Command Terms
-                    </a>
                   </div>
 
                   <div className="mt-5 overflow-hidden rounded-lg border border-[#e8e1d6]">
-                    <div className="hidden grid-cols-[0.9fr_1fr_1.15fr] bg-[#fbf8f2] text-xs font-extrabold uppercase tracking-[0.12em] text-[#a35c20] md:grid">
+                    <div className="hidden grid-cols-[0.8fr_0.95fr_1.05fr_1.05fr] bg-[#fbf8f2] text-xs font-extrabold uppercase tracking-[0.12em] text-[#a35c20] md:grid">
                       <div className="border-r border-[#e8e1d6] p-4">Criterion</div>
                       <div className="border-r border-[#e8e1d6] p-4">What it means</div>
-                      <div className="p-4">How I help students</div>
+                      <div className="border-r border-[#e8e1d6] p-4">How I help students</div>
+                      <div className="p-4">Sample papers</div>
                     </div>
                     {myp13CriteriaRows.map((row) => (
                       <div
                         key={row.criterion}
-                        className="grid border-t border-[#e8e1d6] text-sm leading-6 text-[#465160] first:border-t-0 md:grid-cols-[0.9fr_1fr_1.15fr]"
+                        className="grid border-t border-[#e8e1d6] text-sm leading-6 text-[#465160] first:border-t-0 md:grid-cols-[0.8fr_0.95fr_1.05fr_1.05fr]"
                       >
                         <div className="border-b border-[#e8e1d6] p-4 font-extrabold text-[#172033] md:border-b-0 md:border-r">
                           {row.criterion}
                         </div>
                         <div className="border-b border-[#e8e1d6] p-4 md:border-b-0 md:border-r">{row.meaning}</div>
-                        <div className="p-4">{row.support}</div>
+                        <div className="border-b border-[#e8e1d6] p-4 md:border-b-0 md:border-r">{row.support}</div>
+                        <div className="p-4">
+                          {row.paperHref ? (
+                            <a
+                              href={paperViewerHref(row.criterion, row.paperHref)}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 font-semibold text-[#0f5b78] hover:underline"
+                            >
+                              <ExternalLink className="h-4 w-4 flex-shrink-0" />
+                              View paper
+                            </a>
+                          ) : (
+                            <span className="text-[#5d6673]">{row.paperNote}</span>
+                          )}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -2860,24 +2839,10 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
           {isMypCourse && (
             <>
               <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
-                <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Command terms</p>
-                <h2 className="mt-3 text-3xl font-extrabold tracking-tight">MYP Command Term Mastery</h2>
-                <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                  {commandTerms.map(([term, meaning]) => (
-                    <div key={term} className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5">
-                      <h3 className="font-extrabold">{term}</h3>
-                      <p className="mt-2 text-sm leading-7 text-[#5d6673]">{meaning}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
                 <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Worked samples</p>
-                <h2 className="mt-3 text-3xl font-extrabold tracking-tight">Criterion Exemplar Papers</h2>
+                <h2 className="mt-3 text-3xl font-extrabold tracking-tight">MYP Sample Papers</h2>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5d6673]">
-                  Real MYP assessment exemplars mapped to the assessment criteria. Each opens in a side-by-side
-                  viewer in a new tab.
+                  Real MYP criterion samples and a command terms reference. Each opens as a full-page PDF in a new tab.
                 </p>
                 <div className="mt-7 grid gap-3 sm:grid-cols-2">
                   {mypPapers.map((paper) => (
@@ -2905,24 +2870,18 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
               {isMypCourse ? "MYP Student Success Stories" : "What Students and Parents Say"}
             </h2>
-            <div className="mt-7 grid gap-4 sm:grid-cols-2">
-              {testimonials.map((test) => (
-                <div key={test.author} className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5">
-                  <div className="mb-4 flex gap-1 text-[#d99021]">
-                    {[...Array(5)].map((_, idx) => (
-                      <Star key={idx} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-sm leading-7 text-[#465160]">"{test.text}"</p>
-                  <div className="mt-4 text-xs font-extrabold uppercase tracking-[0.14em] text-[#0f5b78]">
-                    {test.author}
-                  </div>
-                </div>
-              ))}
-            </div>
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5d6673]">
+              Real students and parents in their own words. Tap any clip to play it, or open a message to read it in full.
+            </p>
 
             <TestimonialWall videos={courseVideos} feedback={courseFeedback} layout="grid" />
           </section>
+
+          {(isMypCourse || isDpCourse || isIaCourse) && (
+            <section className="rounded-lg border border-[#ded2c3] bg-[#fbf8f2] p-6 md:p-8">
+              <SchoolsMarquee />
+            </section>
+          )}
         </main>
 
         <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">

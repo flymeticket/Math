@@ -28,11 +28,12 @@ export const coursePapers: Record<string, PaperEntry[]> = {
   ],
 };
 
-// MYP 1-3 criterion sample pages (single exemplar PDFs, open in a new tab).
+// MYP sample papers and references (single PDFs, open full-page in a new tab).
 export const mypPapers: PaperEntry[] = [
   { label: "Criterion A: Knowing and Understanding", qp: "/papers/myp/Criterion_A_Knowing_and_Understanding.pdf" },
   { label: "Criterion B: Investigating Patterns", qp: "/papers/myp/Criterion_B_Investigating_Patterns.pdf" },
   { label: "Criterion D: Applying Mathematics in Real-life Contexts", qp: "/papers/myp/Criterion_D_Applying_Mathematics.pdf" },
+  { label: "MYP Command Terms", qp: "/papers/myp/MYP_Command_Terms.pdf" },
 ];
 
 export function paperViewerHref(title: string, qp: string, ms?: string) {

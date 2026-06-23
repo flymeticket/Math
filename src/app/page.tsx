@@ -16,11 +16,13 @@ import {
   Shapes,
   Sigma,
   Star,
+  UserCheck,
 } from "lucide-react";
 import type { CSSProperties } from "react";
 import { site } from "./site";
 import { Reveal } from "./Reveal";
 import { TestimonialWall } from "./TestimonialWall";
+import { SchoolsMarquee } from "./SchoolsMarquee";
 import { allVideos, allFeedback } from "./testimonials";
 
 const stats = [
@@ -30,36 +32,55 @@ const stats = [
   ["1-on-1", "Every lesson"],
 ];
 
+const universities = [
+  { name: "Harvard", domain: "harvard.edu" },
+  { name: "Oxford", domain: "ox.ac.uk" },
+  { name: "Cambridge", domain: "cam.ac.uk" },
+  { name: "Stanford", domain: "stanford.edu" },
+  { name: "MIT", domain: "mit.edu" },
+  { name: "Princeton", domain: "princeton.edu" },
+  { name: "Yale", domain: "yale.edu" },
+  { name: "Imperial College", domain: "imperial.ac.uk" },
+  { name: "UC Berkeley", domain: "berkeley.edu" },
+  { name: "Columbia", domain: "columbia.edu" },
+];
+
 const differentiators = [
   {
     icon: BadgeCheck,
     title: "Taught the way the IB marks",
-    text: "Lessons are built around command terms, the assessment criteria, and real mark schemes, so students earn the marks examiners actually award.",
+    text: "Lessons are strictly built around official IB command terms, the four core assessment criteria, and real mark schemes. We ensure students learn exactly how to earn the marks that examiners actually award.",
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=70",
   },
   {
     icon: Compass,
-    title: "One plan per student",
-    text: "We start with a diagnostic, find the real gaps, and shape every session around the student's syllabus, school deadlines, and grade target.",
+    title: "One bespoke plan per student",
+    text: "We don't use cookie-cutter worksheets. We start with a deep diagnostic to expose real knowledge gaps, then directly shape every session around the student's specific school syllabus, deadlines, and target grade.",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=70",
   },
   {
     icon: BookOpenCheck,
     title: "MYP to DP, fully covered",
-    text: "From MYP investigations to AA HL proof and the Internal Assessment, one tutor carries the student through every stage of IB Maths.",
+    text: "From MYP investigations to DP Analysis & Approaches HL proofs and the Internal Assessment, you work directly with dedicated IB math specialists who guide students seamlessly through every stage of their journey.",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=70",
+  },
+  {
+    icon: UserCheck,
+    title: "Direct Access, Zero Agency Middlemen",
+    text: "You deal directly with dedicated IB math specialists who own the results, not a hands-off matching platform. There are no random contractors or administrative middlemen. Just expert, seamless instruction.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=70",
   },
 ];
 
 const assessmentPoints = [
-  "Command-term coaching so students know what state, justify, and evaluate require.",
+  "Rubric coaching so students know exactly what each question is asking before they answer.",
   "Criterion B and D structure for investigations, modelling, and reflection.",
   "Sample papers opened beside their mark schemes, the way examiners read them.",
   "Parent updates that show topic gaps and assessment readiness, not just attendance.",
 ];
 
 const courses = [
-  { name: "IB MYP Maths", level: "Grades 6 to 10", link: "/ib-myp-maths/", icon: Shapes, fg: "#0f5b78", tile: "#e2eff3", desc: "Criteria A to D, command terms, investigations, and Standard or Extended pathway planning." },
+  { name: "IB MYP Maths", level: "Grades 6 to 10", link: "/ib-myp-maths/", icon: Shapes, fg: "#0f5b78", tile: "#e2eff3", desc: "Criteria A to D, investigations, and Standard or Extended pathway planning." },
   { name: "Math AA SL", level: "DP Standard", link: "/ib-math-aa-sl/", icon: FunctionSquare, fg: "#4a4b9c", tile: "#e8e9f8", desc: "Functions, algebra, trigonometry, calculus, and clean written exam technique." },
   { name: "Math AA HL", level: "DP Higher", link: "/ib-math-aa-hl/", icon: Sigma, fg: "#4a4b9c", tile: "#e8e9f8", desc: "Proof, series, complex numbers, advanced calculus, and top-band Paper 3 strategy." },
   { name: "Math AI SL", level: "DP Standard", link: "/ib-math-ai-sl/", icon: BarChart3, fg: "#b96a2e", tile: "#f7e8db", desc: "Applications, statistics, modelling, finance, and technology-led problem solving." },
@@ -93,7 +114,7 @@ const faqs = [
   {
     question: "Do you really teach the way IB examiners mark?",
     answer:
-      "That is the core of our coaching. Students learn what command terms like state, justify, and evaluate require, how the criteria and mark bands work, and how to pick up method marks from official mark schemes.",
+      "That is the core of our coaching. Students learn how the assessment criteria and mark bands work, what each question is really asking, and how to pick up method marks from official mark schemes.",
   },
   {
     question: "How do you help with the Internal Assessment?",
@@ -136,7 +157,7 @@ export default function Home() {
               IB Maths tutoring that teaches the rubric, not just the topic.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-200 md:text-lg">
-              Clear one-on-one lessons for MYP, AA, AI, and the Internal Assessment, focused on command terms, method,
+              Clear one-on-one lessons for MYP, AA, AI, and the Internal Assessment, focused on the rubric, method,
               and the exam habits that move grades.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -180,6 +201,36 @@ export default function Home() {
         </Reveal>
       </section>
 
+      <section className="border-b border-[#e8e1d6] bg-[#f7f4ee] py-12 md:py-14">
+        <Reveal className="mx-auto max-w-6xl px-6">
+          <h2 className="text-center text-2xl font-extrabold tracking-tight text-[#172033] md:text-3xl">
+            Empowering <span className="text-[#0f9bd0]">Students</span> To Get Into Top Colleges
+          </h2>
+        </Reveal>
+        <div className="group relative mt-9 overflow-hidden">
+          <div className="ax-marquee flex w-max items-center group-hover:[animation-play-state:paused]">
+            {[...universities, ...universities].map((uni, index) => (
+              <div
+                key={`${uni.name}-${index}`}
+                className="mx-3 flex h-[70px] flex-shrink-0 items-center gap-3 rounded-2xl border border-[#ece6dc] bg-white px-7 shadow-[0_12px_30px_-20px_rgba(17,17,17,0.45)]"
+              >
+                <img
+                  src={`https://www.google.com/s2/favicons?domain=${uni.domain}&sz=128`}
+                  alt={`${uni.name} logo`}
+                  loading="lazy"
+                  className="h-8 w-8 flex-shrink-0 object-contain"
+                />
+                <span className="whitespace-nowrap font-serif text-lg font-bold leading-tight text-[#1c2a44]">
+                  {uni.name}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#f7f4ee] to-transparent md:w-28" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#f7f4ee] to-transparent md:w-28" />
+        </div>
+      </section>
+
       <section className="py-20 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="max-w-2xl">
@@ -188,7 +239,7 @@ export default function Home() {
               Most tutoring just adds worksheets. We coach how the IB actually marks.
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {differentiators.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -214,6 +265,10 @@ export default function Home() {
             })}
           </div>
         </div>
+      </section>
+
+      <section className="border-y border-[#e8e1d6] bg-[#f7f4ee] py-12 md:py-14">
+        <SchoolsMarquee />
       </section>
 
       <section className="bg-[#172033] py-20 text-white md:py-24">
@@ -357,8 +412,8 @@ export default function Home() {
         <Reveal className="relative mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight md:text-5xl">Start with one focused trial class.</h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-cyan-50">
-            Share the student's grade, syllabus, and next assessment. We will recommend the tutor, the pacing, and a
-            first practice plan.
+            Share your child's grade, syllabus, and next assessment. We will align their targeted math pathway,
+            establish the ideal pacing, and design their first custom practice plan.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <a

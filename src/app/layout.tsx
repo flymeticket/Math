@@ -5,6 +5,7 @@ import "./globals.css";
 import { BrandLogo } from "./BrandLogo";
 import { ThemeToggle } from "./ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
+import { NavDropdown } from "./NavDropdown";
 import { site } from "./site";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,8 +20,14 @@ export const metadata: Metadata = {
   },
 };
 
+const mypMenuItems = [
+  { href: "/ib-myp-maths/", label: "IB MYP Maths" },
+  { href: "/myp-1-3/", label: "MYP 1-3, Grades 6 to 8" },
+  { href: "/myp-4-5/", label: "MYP 4-5, Grades 9 to 10" },
+  { href: "/myp-enrichment/", label: "MYP Enrichment Tier" },
+];
+
 const navItems = [
-  { href: "/ib-myp-maths/", label: "MYP" },
   { href: "/ib-math-ai-sl/", label: "AI SL" },
   { href: "/ib-math-ai-hl/", label: "AI HL" },
   { href: "/ib-math-aa-sl/", label: "AA SL" },
@@ -47,6 +54,7 @@ export default function RootLayout({
             <BrandLogo />
 
             <nav className="hidden items-center gap-5 text-sm font-semibold lg:flex">
+              <NavDropdown label="MYP" items={mypMenuItems} />
               {navItems.map((item) => (
                 <a
                   key={item.href}
@@ -91,7 +99,8 @@ export default function RootLayout({
                 <BrandLogo tone="dark" />
               </div>
               <p className="text-sm leading-relaxed text-slate-400">
-                Specialist IB Maths tuition for MYP, AI, AA, and Internal Assessment support across global time zones.
+                Dedicated IB Mathematics Educators providing direct, expert tuition for MYP, AI, AA, and Internal
+                Assessments across global time zones. No agencies, just elite tutors.
               </p>
             </div>
 

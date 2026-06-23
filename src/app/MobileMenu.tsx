@@ -7,6 +7,9 @@ import { site } from "./site";
 const links = [
   { href: "/", label: "Home" },
   { href: "/ib-myp-maths/", label: "MYP Maths" },
+  { href: "/myp-1-3/", label: "MYP 1-3, Grades 6 to 8", sub: true },
+  { href: "/myp-4-5/", label: "MYP 4-5, Grades 9 to 10", sub: true },
+  { href: "/myp-enrichment/", label: "MYP Enrichment Tier", sub: true },
   { href: "/ib-math-aa-sl/", label: "Math AA SL" },
   { href: "/ib-math-aa-hl/", label: "Math AA HL" },
   { href: "/ib-math-ai-sl/", label: "Math AI SL" },
@@ -66,7 +69,11 @@ export function MobileMenu() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="border-b border-[#f0ece4] py-3 text-base font-semibold text-[#172033] transition-colors hover:text-[#0f5b78]"
+                  className={`border-b border-[#f0ece4] transition-colors hover:text-[#0f5b78] ${
+                    link.sub
+                      ? "py-2.5 pl-4 text-sm font-medium text-[#5d6673]"
+                      : "py-3 text-base font-semibold text-[#172033]"
+                  }`}
                 >
                   {link.label}
                 </a>

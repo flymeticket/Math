@@ -99,7 +99,7 @@ export const dpSyllabus: Record<string, DpTopic[]> = {
       rows: [
         ["SL 2.1", "Parallel and perpendicular lines", "Relationship between the slopes of lines."],
         ["SL 2.2", "Domain and range", "Sketch and interpret key features."],
-        ["SL 2.3", "The graph of a function, y = f(x)", 'Know the difference between the command terms "draw" and "sketch".'],
+        ["SL 2.3", "The graph of a function, y = f(x)", 'Know the difference between "draw" and "sketch".'],
         ["SL 2.4", "Function notation", "Evaluate and interpret functions; find the maximum and minimum of a function."],
         ["SL 2.5", "Mathematical modelling", "Linear, quadratic and exponential models."],
         ["SL 2.6", "Piecewise functions", "Define functions over different intervals."],

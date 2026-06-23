@@ -6,12 +6,12 @@ export interface VideoTestimonial {
 }
 
 export const mypVideos: VideoTestimonial[] = [
-  { src: "/testimonials/videos/myp-inaya-student.mp4", name: "Inaya", role: "MYP Student" },
-  { src: "/testimonials/videos/myp-aashrutha-student.mp4", name: "Aashrutha", role: "MYP Student" },
-  { src: "/testimonials/videos/myp-avika-student.mp4", name: "Avika", role: "MYP Student", landscape: true },
-  { src: "/testimonials/videos/myp-gayatri-student.mp4", name: "Gayatri", role: "MYP Student", landscape: true },
-  { src: "/testimonials/videos/myp-inaya-parent.mp4", name: "Inaya's Parent", role: "MYP Parent", landscape: true },
-  { src: "/testimonials/videos/myp-parent-2.mp4", name: "A Parent", role: "MYP Parent" },
+  { src: "/testimonials/videos/myp-inaya-student.mp4", name: "MYP 2 Student", role: "IB MYP Mathematics" },
+  { src: "/testimonials/videos/myp-aashrutha-student.mp4", name: "MYP 5 Student", role: "IB MYP Mathematics" },
+  { src: "/testimonials/videos/myp-avika-student.mp4", name: "MYP 3 Student", role: "IB MYP Mathematics", landscape: true },
+  { src: "/testimonials/videos/myp-gayatri-student.mp4", name: "MYP 5 Student", role: "IB MYP Mathematics", landscape: true },
+  { src: "/testimonials/videos/myp-inaya-parent.mp4", name: "MYP 3, Parent", role: "IB MYP Mathematics", landscape: true },
+  { src: "/testimonials/videos/myp-parent-2.mp4", name: "MYP 3, Parent", role: "IB MYP Mathematics" },
 ];
 
 export const dpVideos: VideoTestimonial[] = [
