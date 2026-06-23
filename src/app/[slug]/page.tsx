@@ -1476,53 +1476,6 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
               </div>
             </div>
 
-            <div className="mt-4 grid gap-3 md:grid-cols-3">
-              {mypStagePage.concepts.map(([title, text], index) => (
-                <div key={title} className="rounded-lg border border-[#ded2c3] bg-white p-4 md:p-5">
-                  <div className="flex items-center gap-3">
-                    <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-lg bg-[#f5b84b] text-xs font-extrabold text-[#172033]">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="text-lg font-extrabold">{title}</h3>
-                  </div>
-                  <p className="mt-3 text-sm leading-6 text-[#465160]">{text}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-4 rounded-lg border border-[#ded2c3] bg-white p-5 md:p-6">
-              <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-                <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Topic framework</p>
-                  <h3 className="mt-2 text-xl font-extrabold leading-tight">A cleaner map of what gets covered</h3>
-                </div>
-                <p className="max-w-xl text-sm leading-6 text-[#5d6673]">
-                  Each block keeps the syllabus scannable, so parents can see the academic progression without wading
-                  through a long wall of text.
-                </p>
-              </div>
-              <div className="mt-5 grid gap-3 lg:grid-cols-3 lg:items-start">
-                {mypStagePage.syllabusGroups.map((group, index) => (
-                  <div key={group.title} className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-4 md:p-5">
-                    <div className="flex items-start gap-3">
-                      <span className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg bg-[#172033] text-xs font-extrabold text-[#f5b84b]">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <h3 className="pt-1 font-extrabold">{group.title}</h3>
-                    </div>
-                    <ul className="mt-4 space-y-2 text-sm leading-6 text-[#465160]">
-                      {group.topics.map((topic) => (
-                        <li key={topic} className="flex gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#0f5b78]" />
-                          <span>{topic}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {mypStagePage.slug === "myp-1-3" && (
               <div className="mt-4 space-y-4">
                 <div className="rounded-lg border border-[#ded2c3] bg-white p-5 md:p-6">
@@ -1530,7 +1483,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
                   <h3 className="mt-3 text-2xl font-extrabold leading-tight">
                     Laying the Foundations: MYP 1-3 Mathematics (Grades 6-8)
                   </h3>
-                  <div className="mt-5 grid gap-5 text-sm leading-7 text-[#465160] md:grid-cols-2">
+                  <div className="mt-5 grid gap-4 text-sm leading-7 text-[#465160]">
                     <p>
                       The transition from primary school math to the IB Middle Years Programme can be jarring. Suddenly,
                       math is not just about memorizing timetables or formulas. It is about investigating patterns,
