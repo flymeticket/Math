@@ -2789,7 +2789,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
             </section>
           )}
 
-          {isMypCourse && (
+          {isMypCourse && !mypStagePage && (
             <>
               <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
                 <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Worked samples</p>

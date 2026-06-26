@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import type { CSSProperties } from "react";
 import { site } from "./site";
+import { HeroImageFlow } from "./HeroImageFlow";
 import { Reveal } from "./Reveal";
 import { TestimonialWall } from "./TestimonialWall";
 import { SchoolsMarquee } from "./SchoolsMarquee";
@@ -142,11 +143,7 @@ export default function Home() {
   return (
     <div className="bg-[#f7f4ee] text-[#172033]">
       <section className="relative overflow-hidden bg-[#111827]">
-        <img
-          src="/images/ib-maths-tutoring-hero.png"
-          alt="Online IB mathematics tutoring workspace with laptop, tablet, and notes"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        <HeroImageFlow />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.94)_0%,rgba(15,23,42,0.78)_45%,rgba(15,23,42,0.35)_100%)]" />
         <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-20 text-white md:pb-32 md:pt-24">
           <Reveal className="max-w-2xl">
