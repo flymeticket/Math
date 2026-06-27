@@ -46,12 +46,15 @@ export function MobileMenu() {
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-[80] bg-black/40" onClick={() => setOpen(false)}>
+        <div className="fixed inset-0 z-[80] bg-black/50" onClick={() => setOpen(false)}>
           <div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
             onClick={(e) => e.stopPropagation()}
-            className="absolute right-0 top-0 flex h-full w-[82%] max-w-xs flex-col bg-white p-6 shadow-2xl"
+            className="fixed inset-y-0 right-0 z-[90] flex h-[100dvh] max-h-[100dvh] w-[86vw] max-w-[340px] flex-col overflow-hidden bg-white shadow-2xl"
           >
-            <div className="flex items-center justify-between">
+            <div className="flex flex-shrink-0 items-center justify-between border-b border-[#e8e1d6] px-5 py-5">
               <span className="text-sm font-extrabold uppercase tracking-[0.16em] text-[#a35c20]">Menu</span>
               <button
                 type="button"
@@ -63,16 +66,16 @@ export function MobileMenu() {
               </button>
             </div>
 
-            <nav className="mt-6 flex flex-col">
+            <nav className="flex-1 overflow-y-auto px-4 py-4">
               {links.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`border-b border-[#f0ece4] transition-colors hover:text-[#0f5b78] ${
+                  className={`block rounded-xl transition-colors hover:bg-[#f7f4ee] hover:text-[#0f5b78] ${
                     link.sub
-                      ? "py-2.5 pl-4 text-sm font-medium text-[#5d6673]"
-                      : "py-3 text-base font-semibold text-[#172033]"
+                      ? "ml-3 border-l border-[#e8e1d6] px-3 py-2.5 text-sm font-semibold text-[#5d6673]"
+                      : "px-3 py-3 text-base font-extrabold text-[#172033]"
                   }`}
                 >
                   {link.label}
@@ -80,23 +83,25 @@ export function MobileMenu() {
               ))}
             </nav>
 
-            <a
-              href={site.bookingHref}
-              onClick={() => setOpen(false)}
-              className="mt-6 rounded-xl bg-[#f5b84b] px-5 py-3 text-center text-sm font-extrabold text-[#172033]"
-            >
-              Book a free trial
-            </a>
+            <div className="flex-shrink-0 border-t border-[#e8e1d6] bg-[#fbf8f2] p-5">
+              <a
+                href={site.bookingHref}
+                onClick={() => setOpen(false)}
+                className="block rounded-xl bg-[#f5b84b] px-5 py-3 text-center text-sm font-extrabold text-[#172033]"
+              >
+                Book a free trial
+              </a>
 
-            <div className="mt-6 space-y-3 text-sm font-semibold text-[#465160]">
-              <a href={site.phoneHref} className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-[#0f5b78]" />
-                {site.phoneLabel}
-              </a>
-              <a href={site.emailHref} className="flex items-center gap-2 break-all">
-                <Mail className="h-4 w-4 flex-shrink-0 text-[#0f5b78]" />
-                {site.email}
-              </a>
+              <div className="mt-5 space-y-3 text-sm font-semibold text-[#465160]">
+                <a href={site.phoneHref} className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-[#0f5b78]" />
+                  {site.phoneLabel}
+                </a>
+                <a href={site.emailHref} className="flex items-center gap-2 break-all">
+                  <Mail className="h-4 w-4 flex-shrink-0 text-[#0f5b78]" />
+                  {site.email}
+                </a>
+              </div>
             </div>
           </div>
         </div>

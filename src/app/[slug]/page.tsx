@@ -2279,7 +2279,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
                   <div className="mt-4 divide-y divide-white/10">
                     {[
                       ["4", "Pathways: AA SL/HL and AI SL/HL"],
-                      ["240 / 150", "HL / SL minimum teaching hours"],
+                      ["150 / 100", "HL / SL minimum teaching hours"],
                       ["20%", "Weight of the Internal Assessment"],
                       ["7", "The grade we coach students toward"],
                     ].map(([value, label]) => (
@@ -2426,7 +2426,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
               <p className="mt-3 max-w-3xl text-sm leading-7 text-[#465160]">
                 Designed for both Standard Level (SL) and Higher Level (HL) students, DP Mathematics covers a wide range
                 of topics crucial for understanding and applying mathematics in real-world and academic scenarios. Higher
-                Level study requires a minimum of 240 teaching hours, while Standard Level requires a minimum of 150. The
+                Level study requires a minimum of 150 teaching hours, while Standard Level requires a minimum of 100. The
                 syllabus spans statistics, calculus, and mathematical modeling across all five pillars.
               </p>
             </div>
@@ -2540,14 +2540,14 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
                 </div>
                 <p className="text-xs font-semibold text-[#8a8170]">Minimum IB teaching hours by topic.</p>
               </div>
-              <div className="mt-4 overflow-x-auto">
-                <table className="w-full min-w-[360px] border-collapse text-left">
+              <div className="mt-4">
+                <table className="w-full table-fixed border-collapse text-left">
                   <thead>
                     <tr>
-                      <th className="border border-[#1f2d40] bg-[#172033] px-4 py-3 text-xs font-extrabold uppercase tracking-[0.14em] text-white">
+                      <th className="border border-[#1f2d40] bg-[#172033] px-3 py-3 text-xs font-extrabold uppercase tracking-[0.14em] text-white md:px-4">
                         Topic
                       </th>
-                      <th className="w-[120px] border border-[#1f2d40] bg-[#172033] px-4 py-3 text-right text-xs font-extrabold uppercase tracking-[0.14em] text-white">
+                      <th className="w-[82px] border border-[#1f2d40] bg-[#172033] px-3 py-3 text-right text-xs font-extrabold uppercase tracking-[0.14em] text-white sm:w-[110px] md:w-[120px] md:px-4">
                         Hours
                       </th>
                     </tr>
@@ -2562,14 +2562,14 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
                         >
                           <th
                             scope="row"
-                            className={`border border-[#e3d9ca] px-4 py-3 text-left text-sm ${
+                            className={`break-words border border-[#e3d9ca] px-3 py-3 text-left text-sm md:px-4 ${
                               isTotal ? "font-extrabold text-white" : "font-semibold text-[#172033]"
                             }`}
                           >
                             {row.topic}
                           </th>
                           <td
-                            className={`border border-[#e3d9ca] px-4 py-3 text-right text-sm font-extrabold ${
+                            className={`border border-[#e3d9ca] px-3 py-3 text-right text-sm font-extrabold md:px-4 ${
                               isTotal ? "text-[#f5b84b]" : "text-[#0f5b78]"
                             }`}
                           >
@@ -2751,8 +2751,8 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
         </section>
       )}
 
-      <div className="grid gap-8 py-16 lg:grid-cols-[minmax(0,1fr)_300px] lg:py-20">
-        <main className="space-y-10">
+      <div className="grid min-w-0 gap-8 py-16 lg:grid-cols-[minmax(0,1fr)_300px] lg:py-20">
+        <main className="min-w-0 space-y-10">
           <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
             <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Tutoring approach</p>
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
@@ -2837,7 +2837,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
           )}
         </main>
 
-        <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+        <aside className="min-w-0 space-y-5 lg:sticky lg:top-24 lg:self-start">
           {(page.city || page.country || page.state) && (
             <div className="rounded-lg border border-[#ded2c3] bg-white p-5">
               <h3 className="flex items-center gap-2 font-extrabold">
