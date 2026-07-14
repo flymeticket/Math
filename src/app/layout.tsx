@@ -3,7 +3,6 @@ import { Inter, Outfit } from "next/font/google";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import "./globals.css";
 import { BrandLogo } from "./BrandLogo";
-import { ThemeToggle } from "./ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
 import { NavDropdown } from "./NavDropdown";
 import { site } from "./site";
@@ -41,14 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${outfit.variable}`}>
+    <html lang="en" className={`theme-v2 scroll-smooth ${outfit.variable}`}>
       <body className={`${inter.className} min-h-screen flex flex-col bg-[#f7f4ee] text-[#172033]`}>
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{if(localStorage.getItem('ax-theme')==='v2'){document.documentElement.classList.add('theme-v2')}}catch(e){}})()",
-          }}
-        />
         <header className="sticky top-0 z-50 border-b border-[#e8e1d6] bg-white/95 backdrop-blur">
           <div className="container mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
             <BrandLogo />
@@ -78,7 +71,6 @@ export default function RootLayout({
             </div>
 
             <div className="flex items-center gap-3">
-              <ThemeToggle />
               <a
                 href={site.bookingHref}
                 className="rounded-lg bg-[#0f5b78] px-4 py-2.5 text-xs font-bold text-white transition-colors hover:bg-[#0b4358] sm:px-5"

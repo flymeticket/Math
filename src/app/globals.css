@@ -51,7 +51,7 @@ body {
   }
 }
 
-/* ===== Design v2 ("New look" toggle adds .theme-v2 to <html>) =====
+/* ===== Default design theme =====
    Black & tan: teal becomes ink, navy becomes near-black, gold stays the
    single accent. Outfit replaces Inter, one softer radius, card elevation. */
 .theme-v2 body {
