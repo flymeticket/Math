@@ -2853,22 +2853,29 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
           <div className="rounded-lg border border-[#ded2c3] bg-white p-5">
             <h3 className="font-extrabold">Book a trial lesson</h3>
             <p className="mt-2 text-sm leading-7 text-[#5d6673]">Receive a focused plan for {page.course.name}.</p>
-            <form action={site.emailHref} method="post" encType="text/plain" className="mt-5 space-y-3">
+            <form action={site.contactFormAction} method="post" className="mt-5 space-y-3">
+              <input type="hidden" name="_subject" defaultValue={`${site.contactFormSubject} - ${page.course.name}`} />
+              <input type="hidden" name="_template" defaultValue="table" />
+              <input type="hidden" name="_captcha" defaultValue="false" />
+              <input type="hidden" name="course_page" defaultValue={page.course.name} />
               <input
                 name="name"
                 type="text"
+                required
                 placeholder="Your name"
                 className="w-full rounded-lg border border-[#d8ccbc] bg-[#fbf8f2] px-4 py-3 text-sm outline-none focus:border-[#0f5b78]"
               />
               <input
                 name="email"
                 type="email"
+                required
                 placeholder="Email address"
                 className="w-full rounded-lg border border-[#d8ccbc] bg-[#fbf8f2] px-4 py-3 text-sm outline-none focus:border-[#0f5b78]"
               />
               <input
                 name="phone"
                 type="tel"
+                required
                 placeholder="Phone number"
                 className="w-full rounded-lg border border-[#d8ccbc] bg-[#fbf8f2] px-4 py-3 text-sm outline-none focus:border-[#0f5b78]"
               />

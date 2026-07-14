@@ -84,11 +84,14 @@ export default function BookSessionPage() {
             <div className="border-b border-[#e8e1d6] pb-6">
               <h2 className="text-2xl font-extrabold">Student details</h2>
               <p className="mt-2 text-sm leading-7 text-[#5d6673]">
-                This uses your email app to send the enquiry. You can also use WhatsApp for a faster reply.
+                Your enquiry goes directly to our official inbox. You can also use WhatsApp for a faster reply.
               </p>
             </div>
 
-            <form action={site.emailHref} method="post" encType="text/plain" className="mt-8 space-y-5">
+            <form action={site.contactFormAction} method="post" className="mt-8 space-y-5">
+              <input type="hidden" name="_subject" defaultValue={site.contactFormSubject} />
+              <input type="hidden" name="_template" defaultValue="table" />
+              <input type="hidden" name="_captcha" defaultValue="false" />
               <div className="grid gap-4 md:grid-cols-2">
                 <label className="space-y-2 text-sm font-bold">
                   Parent / Student Name

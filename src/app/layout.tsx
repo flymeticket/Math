@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 import "./globals.css";
 import { BrandLogo } from "./BrandLogo";
 import { ThemeToggle } from "./ThemeToggle";
@@ -91,6 +91,19 @@ export default function RootLayout({
         </header>
 
         <main className="flex-grow">{children}</main>
+
+        <a
+          href={site.whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with IB Learners Academy on WhatsApp"
+          className="group fixed bottom-5 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-[0_16px_32px_-14px_rgba(18,140,126,0.85)] transition duration-200 hover:w-[178px] hover:justify-start hover:gap-2 hover:px-5 hover:bg-[#1ebe5d] focus:outline-none focus:ring-4 focus:ring-[#25d366]/30 md:bottom-7 md:right-7"
+        >
+          <MessageCircle className="h-6 w-6 flex-shrink-0" />
+          <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm font-extrabold opacity-0 transition-all duration-200 group-hover:max-w-[120px] group-hover:opacity-100">
+            WhatsApp us
+          </span>
+        </a>
 
         <footer className="border-t border-[#203044] bg-[#111827] py-14 text-slate-300">
           <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
