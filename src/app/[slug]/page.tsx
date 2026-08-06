@@ -28,6 +28,7 @@ import { dpCourseInfo, dpSyllabus, dpHours } from "../dp-syllabus";
 import { coursePapers, mypPapers, paperViewerHref } from "../papers";
 import { TestimonialWall } from "../TestimonialWall";
 import { SchoolsMarquee } from "../SchoolsMarquee";
+import { getMenaLocale } from "../mena-locales";
 import { mypVideos, dpVideos, mypFeedback, dpFeedback } from "../testimonials";
 
 const dataPath = path.join(process.cwd(), "data", "seo_pages.json");
@@ -1161,7 +1162,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default function DynamicSeoPage({ params }: { params: { slug: string } }) {
-  const page = getPages().find((p) => p.slug.replace(/^\/|\/$/g, "") === params.slug);
+  const allPages = getPages();
+  const page = allPages.find((p) => p.slug.replace(/^\/|\/$/g, "") === params.slug);
 
   if (!page) {
     return (
@@ -1178,6 +1180,26 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
   const normalizedSlug = page.slug.replace(/^\/|\/$/g, "");
   const mypStagePage = mypAcademicStages.find((stage) => stage.slug === normalizedSlug);
   const locationLabel = page.city || page.state || page.country || mypStagePage?.label || "IB Courses";
+  const menaLocale = getMenaLocale(page.city, page.country);
+
+  // Internal linking for location pages: cities within a country, the country hub,
+  // and the same location's other IB Maths courses.
+  const isLocationPage = Boolean(page.country);
+  const sameCountryCourse = isLocationPage
+    ? allPages.filter((p) => p.country === page.country && p.course.id === page.course.id && p.slug !== page.slug)
+    : [];
+  const relatedCities = sameCountryCourse
+    .filter((p) => Boolean(p.city))
+    .sort((a, b) => (a.city || "").localeCompare(b.city || ""));
+  const countryHubPage = sameCountryCourse.find((p) => !p.city);
+  const otherCoursesHere = isLocationPage
+    ? allPages.filter(
+        (p) =>
+          p.country === page.country &&
+          (p.city || "") === (page.city || "") &&
+          p.course.id !== page.course.id,
+      )
+    : [];
   const isMypCourse = page.course.id === "myp" || page.course.slug === "ib-myp-maths";
   const isDpCourse = ["aa-sl", "aa-hl", "ai-sl", "ai-hl"].includes(page.course.id);
   const dpFamily = page.course.id.startsWith("aa") ? "aa" : "ai";
@@ -2753,6 +2775,60 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
 
       <div className="grid min-w-0 gap-8 py-16 lg:grid-cols-[minmax(0,1fr)_300px] lg:py-20">
         <main className="min-w-0 space-y-10">
+          {menaLocale && (
+            <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">
+                IB Maths in {locationLabel}
+              </p>
+              <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
+                {page.course.name} tutoring in {locationLabel}
+              </h2>
+              <div className="mt-5 space-y-4 leading-8 text-[#465160]">
+                {menaLocale.intro.map((para) => (
+                  <p key={para.slice(0, 28)}>{para}</p>
+                ))}
+              </div>
+              <div className="mt-7 grid gap-3 sm:grid-cols-3">
+                {menaLocale.stats.map(([value, label]) => (
+                  <div key={label} className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-4 text-center">
+                    <div className="text-2xl font-extrabold text-[#0f5b78]">{value}</div>
+                    <div className="mt-1 text-xs font-semibold leading-5 text-[#5d6673]">{label}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5">
+                <p className="text-sm font-semibold text-[#465160]">{menaLocale.schoolsHeading}:</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {menaLocale.schools.map((school) => (
+                    <span
+                      key={school}
+                      className="rounded-full border border-[#e0d7ca] bg-white px-3 py-1.5 text-xs font-semibold text-[#3b4657]"
+                    >
+                      {school}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {menaLocale && menaLocale.faqs.length > 0 && (
+            <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Local questions</p>
+              <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
+                IB Maths in {locationLabel}: common questions
+              </h2>
+              <div className="mt-6 space-y-4">
+                {menaLocale.faqs.map((faq) => (
+                  <div key={faq.q} className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-5">
+                    <h3 className="font-extrabold text-[#172033]">{faq.q}</h3>
+                    <p className="mt-2 text-sm leading-7 text-[#465160]">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
             <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Tutoring approach</p>
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
@@ -2909,6 +2985,56 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
           </div>
         </aside>
       </div>
+
+      {isLocationPage && (relatedCities.length > 0 || countryHubPage || otherCoursesHere.length > 0) && (
+        <section className="mb-16 rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
+          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Explore more</p>
+
+          {(relatedCities.length > 0 || countryHubPage) && (
+            <div className="mt-5">
+              <h2 className="text-xl font-extrabold tracking-tight">
+                {page.course.name} tutoring across {page.country}
+              </h2>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {countryHubPage && (
+                  <a
+                    href={countryHubPage.slug}
+                    className="rounded-full border border-[#0f5b78] bg-[#edf6f8] px-4 py-1.5 text-sm font-bold text-[#0f5b78] transition-colors hover:bg-[#0f5b78] hover:text-white"
+                  >
+                    All of {page.country}
+                  </a>
+                )}
+                {relatedCities.map((related) => (
+                  <a
+                    key={related.slug}
+                    href={related.slug}
+                    className="rounded-full border border-[#e0d7ca] bg-[#fbf8f2] px-4 py-1.5 text-sm font-semibold text-[#3b4657] transition-colors hover:border-[#0f5b78] hover:text-[#0f5b78]"
+                  >
+                    {related.city}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {otherCoursesHere.length > 0 && (
+            <div className="mt-7">
+              <h2 className="text-xl font-extrabold tracking-tight">Other IB Maths courses in {locationLabel}</h2>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {otherCoursesHere.map((related) => (
+                  <a
+                    key={related.slug}
+                    href={related.slug}
+                    className="rounded-full border border-[#e0d7ca] bg-[#fbf8f2] px-4 py-1.5 text-sm font-semibold text-[#3b4657] transition-colors hover:border-[#0f5b78] hover:text-[#0f5b78]"
+                  >
+                    {related.course.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
         </div>
       </div>
     </div>

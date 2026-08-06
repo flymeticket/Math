@@ -14331,5 +14331,3176 @@
       "level": "All DP",
       "type": "help"
     }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "myp",
+    "country": "Kuwait",
+    "slug": "/ib-myp-maths-tutor-kuwait/",
+    "title": "IB MYP Maths Tutor in Kuwait | Expert Online Tuition",
+    "h1": "Best IB MYP Maths Tutor in Kuwait — Online & In-Person",
+    "meta_desc": "IB MYP Maths tutoring across Kuwait, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-sl",
+    "country": "Kuwait",
+    "slug": "/ib-math-ai-sl-tutor-kuwait/",
+    "title": "IB Math AI SL Tutor in Kuwait | Expert Online Tuition",
+    "h1": "Best IB Math AI SL Tutor in Kuwait — Online & In-Person",
+    "meta_desc": "IB Math AI SL tutoring across Kuwait, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-hl",
+    "country": "Kuwait",
+    "slug": "/ib-math-ai-hl-tutor-kuwait/",
+    "title": "IB Math AI HL Tutor in Kuwait | Expert Online Tuition",
+    "h1": "Best IB Math AI HL Tutor in Kuwait — Online & In-Person",
+    "meta_desc": "IB Math AI HL tutoring across Kuwait, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-sl",
+    "country": "Kuwait",
+    "slug": "/ib-math-aa-sl-tutor-kuwait/",
+    "title": "IB Math AA SL Tutor in Kuwait | Expert Online Tuition",
+    "h1": "Best IB Math AA SL Tutor in Kuwait — Online & In-Person",
+    "meta_desc": "IB Math AA SL tutoring across Kuwait, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-hl",
+    "country": "Kuwait",
+    "slug": "/ib-math-aa-hl-tutor-kuwait/",
+    "title": "IB Math AA HL Tutor in Kuwait | Expert Online Tuition",
+    "h1": "Best IB Math AA HL Tutor in Kuwait — Online & In-Person",
+    "meta_desc": "IB Math AA HL tutoring across Kuwait, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ia",
+    "country": "Kuwait",
+    "slug": "/ib-math-ia-help-kuwait/",
+    "title": "IB Math IA Help in Kuwait | Expert Online Tuition",
+    "h1": "Best IB Math IA Help in Kuwait — Online & In-Person",
+    "meta_desc": "IB Math IA support across Kuwait, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "myp",
+    "country": "Bahrain",
+    "slug": "/ib-myp-maths-tutor-bahrain/",
+    "title": "IB MYP Maths Tutor in Bahrain | Expert Online Tuition",
+    "h1": "Best IB MYP Maths Tutor in Bahrain — Online & In-Person",
+    "meta_desc": "IB MYP Maths tutoring across Bahrain, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Bahrain's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-sl",
+    "country": "Bahrain",
+    "slug": "/ib-math-ai-sl-tutor-bahrain/",
+    "title": "IB Math AI SL Tutor in Bahrain | Expert Online Tuition",
+    "h1": "Best IB Math AI SL Tutor in Bahrain — Online & In-Person",
+    "meta_desc": "IB Math AI SL tutoring across Bahrain, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Bahrain's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-hl",
+    "country": "Bahrain",
+    "slug": "/ib-math-ai-hl-tutor-bahrain/",
+    "title": "IB Math AI HL Tutor in Bahrain | Expert Online Tuition",
+    "h1": "Best IB Math AI HL Tutor in Bahrain — Online & In-Person",
+    "meta_desc": "IB Math AI HL tutoring across Bahrain, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Bahrain's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-sl",
+    "country": "Bahrain",
+    "slug": "/ib-math-aa-sl-tutor-bahrain/",
+    "title": "IB Math AA SL Tutor in Bahrain | Expert Online Tuition",
+    "h1": "Best IB Math AA SL Tutor in Bahrain — Online & In-Person",
+    "meta_desc": "IB Math AA SL tutoring across Bahrain, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Bahrain's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-hl",
+    "country": "Bahrain",
+    "slug": "/ib-math-aa-hl-tutor-bahrain/",
+    "title": "IB Math AA HL Tutor in Bahrain | Expert Online Tuition",
+    "h1": "Best IB Math AA HL Tutor in Bahrain — Online & In-Person",
+    "meta_desc": "IB Math AA HL tutoring across Bahrain, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Bahrain's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ia",
+    "country": "Bahrain",
+    "slug": "/ib-math-ia-help-bahrain/",
+    "title": "IB Math IA Help in Bahrain | Expert Online Tuition",
+    "h1": "Best IB Math IA Help in Bahrain — Online & In-Person",
+    "meta_desc": "IB Math IA support across Bahrain, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Bahrain's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "myp",
+    "country": "Oman",
+    "slug": "/ib-myp-maths-tutor-oman/",
+    "title": "IB MYP Maths Tutor in Oman | Expert Online Tuition",
+    "h1": "Best IB MYP Maths Tutor in Oman — Online & In-Person",
+    "meta_desc": "IB MYP Maths tutoring across Oman, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Oman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-sl",
+    "country": "Oman",
+    "slug": "/ib-math-ai-sl-tutor-oman/",
+    "title": "IB Math AI SL Tutor in Oman | Expert Online Tuition",
+    "h1": "Best IB Math AI SL Tutor in Oman — Online & In-Person",
+    "meta_desc": "IB Math AI SL tutoring across Oman, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Oman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-hl",
+    "country": "Oman",
+    "slug": "/ib-math-ai-hl-tutor-oman/",
+    "title": "IB Math AI HL Tutor in Oman | Expert Online Tuition",
+    "h1": "Best IB Math AI HL Tutor in Oman — Online & In-Person",
+    "meta_desc": "IB Math AI HL tutoring across Oman, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Oman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-sl",
+    "country": "Oman",
+    "slug": "/ib-math-aa-sl-tutor-oman/",
+    "title": "IB Math AA SL Tutor in Oman | Expert Online Tuition",
+    "h1": "Best IB Math AA SL Tutor in Oman — Online & In-Person",
+    "meta_desc": "IB Math AA SL tutoring across Oman, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Oman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-hl",
+    "country": "Oman",
+    "slug": "/ib-math-aa-hl-tutor-oman/",
+    "title": "IB Math AA HL Tutor in Oman | Expert Online Tuition",
+    "h1": "Best IB Math AA HL Tutor in Oman — Online & In-Person",
+    "meta_desc": "IB Math AA HL tutoring across Oman, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Oman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ia",
+    "country": "Oman",
+    "slug": "/ib-math-ia-help-oman/",
+    "title": "IB Math IA Help in Oman | Expert Online Tuition",
+    "h1": "Best IB Math IA Help in Oman — Online & In-Person",
+    "meta_desc": "IB Math IA support across Oman, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Oman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "myp",
+    "country": "Jordan",
+    "slug": "/ib-myp-maths-tutor-jordan/",
+    "title": "IB MYP Maths Tutor in Jordan | Expert Online Tuition",
+    "h1": "Best IB MYP Maths Tutor in Jordan — Online & In-Person",
+    "meta_desc": "IB MYP Maths tutoring across Jordan, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3, aligned to Jordan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-sl",
+    "country": "Jordan",
+    "slug": "/ib-math-ai-sl-tutor-jordan/",
+    "title": "IB Math AI SL Tutor in Jordan | Expert Online Tuition",
+    "h1": "Best IB Math AI SL Tutor in Jordan — Online & In-Person",
+    "meta_desc": "IB Math AI SL tutoring across Jordan, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3, aligned to Jordan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-hl",
+    "country": "Jordan",
+    "slug": "/ib-math-ai-hl-tutor-jordan/",
+    "title": "IB Math AI HL Tutor in Jordan | Expert Online Tuition",
+    "h1": "Best IB Math AI HL Tutor in Jordan — Online & In-Person",
+    "meta_desc": "IB Math AI HL tutoring across Jordan, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3, aligned to Jordan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-sl",
+    "country": "Jordan",
+    "slug": "/ib-math-aa-sl-tutor-jordan/",
+    "title": "IB Math AA SL Tutor in Jordan | Expert Online Tuition",
+    "h1": "Best IB Math AA SL Tutor in Jordan — Online & In-Person",
+    "meta_desc": "IB Math AA SL tutoring across Jordan, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3, aligned to Jordan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-hl",
+    "country": "Jordan",
+    "slug": "/ib-math-aa-hl-tutor-jordan/",
+    "title": "IB Math AA HL Tutor in Jordan | Expert Online Tuition",
+    "h1": "Best IB Math AA HL Tutor in Jordan — Online & In-Person",
+    "meta_desc": "IB Math AA HL tutoring across Jordan, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3, aligned to Jordan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ia",
+    "country": "Jordan",
+    "slug": "/ib-math-ia-help-jordan/",
+    "title": "IB Math IA Help in Jordan | Expert Online Tuition",
+    "h1": "Best IB Math IA Help in Jordan — Online & In-Person",
+    "meta_desc": "IB Math IA support across Jordan, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3, aligned to Jordan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "myp",
+    "country": "Lebanon",
+    "slug": "/ib-myp-maths-tutor-lebanon/",
+    "title": "IB MYP Maths Tutor in Lebanon | Expert Online Tuition",
+    "h1": "Best IB MYP Maths Tutor in Lebanon — Online & In-Person",
+    "meta_desc": "IB MYP Maths tutoring across Lebanon, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+2 (Beirut time), aligned to Lebanon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-sl",
+    "country": "Lebanon",
+    "slug": "/ib-math-ai-sl-tutor-lebanon/",
+    "title": "IB Math AI SL Tutor in Lebanon | Expert Online Tuition",
+    "h1": "Best IB Math AI SL Tutor in Lebanon — Online & In-Person",
+    "meta_desc": "IB Math AI SL tutoring across Lebanon, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+2 (Beirut time), aligned to Lebanon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ai-hl",
+    "country": "Lebanon",
+    "slug": "/ib-math-ai-hl-tutor-lebanon/",
+    "title": "IB Math AI HL Tutor in Lebanon | Expert Online Tuition",
+    "h1": "Best IB Math AI HL Tutor in Lebanon — Online & In-Person",
+    "meta_desc": "IB Math AI HL tutoring across Lebanon, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Lebanon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-sl",
+    "country": "Lebanon",
+    "slug": "/ib-math-aa-sl-tutor-lebanon/",
+    "title": "IB Math AA SL Tutor in Lebanon | Expert Online Tuition",
+    "h1": "Best IB Math AA SL Tutor in Lebanon — Online & In-Person",
+    "meta_desc": "IB Math AA SL tutoring across Lebanon, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Lebanon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "aa-hl",
+    "country": "Lebanon",
+    "slug": "/ib-math-aa-hl-tutor-lebanon/",
+    "title": "IB Math AA HL Tutor in Lebanon | Expert Online Tuition",
+    "h1": "Best IB Math AA HL Tutor in Lebanon — Online & In-Person",
+    "meta_desc": "IB Math AA HL tutoring across Lebanon, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+2 (Beirut time), aligned to Lebanon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "country_hub",
+    "course_id": "ia",
+    "country": "Lebanon",
+    "slug": "/ib-math-ia-help-lebanon/",
+    "title": "IB Math IA Help in Lebanon | Expert Online Tuition",
+    "h1": "Best IB Math IA Help in Lebanon — Online & In-Person",
+    "meta_desc": "IB Math IA support across Lebanon, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+2 (Beirut time), aligned to Lebanon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "slug": "/ib-myp-maths-tutor-kuwait-city/",
+    "title": "IB MYP Maths Tutor in Kuwait City | Best Online Tuition in Kuwait City, Kuwait",
+    "h1": "Top IB MYP Maths Tutor in Kuwait City — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Kuwait City, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait City's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "slug": "/ib-math-ai-sl-tutor-kuwait-city/",
+    "title": "IB Math AI SL Tutor in Kuwait City | Best Online Tuition in Kuwait City, Kuwait",
+    "h1": "Top IB Math AI SL Tutor in Kuwait City — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Kuwait City, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait City's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "slug": "/ib-math-ai-hl-tutor-kuwait-city/",
+    "title": "IB Math AI HL Tutor in Kuwait City | Best Online Tuition in Kuwait City, Kuwait",
+    "h1": "Top IB Math AI HL Tutor in Kuwait City — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Kuwait City, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait City's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "slug": "/ib-math-aa-sl-tutor-kuwait-city/",
+    "title": "IB Math AA SL Tutor in Kuwait City | Best Online Tuition in Kuwait City, Kuwait",
+    "h1": "Top IB Math AA SL Tutor in Kuwait City — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Kuwait City, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait City's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "slug": "/ib-math-aa-hl-tutor-kuwait-city/",
+    "title": "IB Math AA HL Tutor in Kuwait City | Best Online Tuition in Kuwait City, Kuwait",
+    "h1": "Top IB Math AA HL Tutor in Kuwait City — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Kuwait City, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait City's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Kuwait",
+    "city": "Kuwait City",
+    "slug": "/ib-math-ia-help-kuwait-city/",
+    "title": "IB Math IA Help in Kuwait City | Best Online Tuition in Kuwait City, Kuwait",
+    "h1": "Top IB Math IA Help in Kuwait City — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Kuwait City, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Kuwait City's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Bahrain",
+    "city": "Manama",
+    "slug": "/ib-myp-maths-tutor-manama/",
+    "title": "IB MYP Maths Tutor in Manama | Best Online Tuition in Manama, Bahrain",
+    "h1": "Top IB MYP Maths Tutor in Manama — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Manama, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Manama's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Bahrain",
+    "city": "Manama",
+    "slug": "/ib-math-ai-sl-tutor-manama/",
+    "title": "IB Math AI SL Tutor in Manama | Best Online Tuition in Manama, Bahrain",
+    "h1": "Top IB Math AI SL Tutor in Manama — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Manama, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Manama's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Bahrain",
+    "city": "Manama",
+    "slug": "/ib-math-ai-hl-tutor-manama/",
+    "title": "IB Math AI HL Tutor in Manama | Best Online Tuition in Manama, Bahrain",
+    "h1": "Top IB Math AI HL Tutor in Manama — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Manama, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Manama's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Bahrain",
+    "city": "Manama",
+    "slug": "/ib-math-aa-sl-tutor-manama/",
+    "title": "IB Math AA SL Tutor in Manama | Best Online Tuition in Manama, Bahrain",
+    "h1": "Top IB Math AA SL Tutor in Manama — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Manama, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Manama's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Bahrain",
+    "city": "Manama",
+    "slug": "/ib-math-aa-hl-tutor-manama/",
+    "title": "IB Math AA HL Tutor in Manama | Best Online Tuition in Manama, Bahrain",
+    "h1": "Top IB Math AA HL Tutor in Manama — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Manama, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Manama's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Bahrain",
+    "city": "Manama",
+    "slug": "/ib-math-ia-help-manama/",
+    "title": "IB Math IA Help in Manama | Best Online Tuition in Manama, Bahrain",
+    "h1": "Top IB Math IA Help in Manama — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Manama, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Manama's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Oman",
+    "city": "Muscat",
+    "slug": "/ib-myp-maths-tutor-muscat/",
+    "title": "IB MYP Maths Tutor in Muscat | Best Online Tuition in Muscat, Oman",
+    "h1": "Top IB MYP Maths Tutor in Muscat — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Muscat, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Muscat's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Oman",
+    "city": "Muscat",
+    "slug": "/ib-math-ai-sl-tutor-muscat/",
+    "title": "IB Math AI SL Tutor in Muscat | Best Online Tuition in Muscat, Oman",
+    "h1": "Top IB Math AI SL Tutor in Muscat — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Muscat, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Muscat's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Oman",
+    "city": "Muscat",
+    "slug": "/ib-math-ai-hl-tutor-muscat/",
+    "title": "IB Math AI HL Tutor in Muscat | Best Online Tuition in Muscat, Oman",
+    "h1": "Top IB Math AI HL Tutor in Muscat — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Muscat, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Muscat's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Oman",
+    "city": "Muscat",
+    "slug": "/ib-math-aa-sl-tutor-muscat/",
+    "title": "IB Math AA SL Tutor in Muscat | Best Online Tuition in Muscat, Oman",
+    "h1": "Top IB Math AA SL Tutor in Muscat — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Muscat, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Muscat's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Oman",
+    "city": "Muscat",
+    "slug": "/ib-math-aa-hl-tutor-muscat/",
+    "title": "IB Math AA HL Tutor in Muscat | Best Online Tuition in Muscat, Oman",
+    "h1": "Top IB Math AA HL Tutor in Muscat — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Muscat, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Muscat's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Oman",
+    "city": "Muscat",
+    "slug": "/ib-math-ia-help-muscat/",
+    "title": "IB Math IA Help in Muscat | Best Online Tuition in Muscat, Oman",
+    "h1": "Top IB Math IA Help in Muscat — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Muscat, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Muscat's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Jordan",
+    "city": "Amman",
+    "slug": "/ib-myp-maths-tutor-amman/",
+    "title": "IB MYP Maths Tutor in Amman | Best Online Tuition in Amman, Jordan",
+    "h1": "Top IB MYP Maths Tutor in Amman — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Amman, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3, aligned to Amman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Jordan",
+    "city": "Amman",
+    "slug": "/ib-math-ai-sl-tutor-amman/",
+    "title": "IB Math AI SL Tutor in Amman | Best Online Tuition in Amman, Jordan",
+    "h1": "Top IB Math AI SL Tutor in Amman — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Amman, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3, aligned to Amman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Jordan",
+    "city": "Amman",
+    "slug": "/ib-math-ai-hl-tutor-amman/",
+    "title": "IB Math AI HL Tutor in Amman | Best Online Tuition in Amman, Jordan",
+    "h1": "Top IB Math AI HL Tutor in Amman — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Amman, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3, aligned to Amman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Jordan",
+    "city": "Amman",
+    "slug": "/ib-math-aa-sl-tutor-amman/",
+    "title": "IB Math AA SL Tutor in Amman | Best Online Tuition in Amman, Jordan",
+    "h1": "Top IB Math AA SL Tutor in Amman — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Amman, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3, aligned to Amman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Jordan",
+    "city": "Amman",
+    "slug": "/ib-math-aa-hl-tutor-amman/",
+    "title": "IB Math AA HL Tutor in Amman | Best Online Tuition in Amman, Jordan",
+    "h1": "Top IB Math AA HL Tutor in Amman — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Amman, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3, aligned to Amman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Jordan",
+    "city": "Amman",
+    "slug": "/ib-math-ia-help-amman/",
+    "title": "IB Math IA Help in Amman | Best Online Tuition in Amman, Jordan",
+    "h1": "Top IB Math IA Help in Amman — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Amman, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3, aligned to Amman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "slug": "/ib-myp-maths-tutor-beirut/",
+    "title": "IB MYP Maths Tutor in Beirut | Best Online Tuition in Beirut, Lebanon",
+    "h1": "Top IB MYP Maths Tutor in Beirut — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Beirut, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+2 (Beirut time), aligned to Beirut's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "slug": "/ib-math-ai-sl-tutor-beirut/",
+    "title": "IB Math AI SL Tutor in Beirut | Best Online Tuition in Beirut, Lebanon",
+    "h1": "Top IB Math AI SL Tutor in Beirut — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Beirut, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+2 (Beirut time), aligned to Beirut's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "slug": "/ib-math-ai-hl-tutor-beirut/",
+    "title": "IB Math AI HL Tutor in Beirut | Best Online Tuition in Beirut, Lebanon",
+    "h1": "Top IB Math AI HL Tutor in Beirut — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Beirut, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Beirut's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "slug": "/ib-math-aa-sl-tutor-beirut/",
+    "title": "IB Math AA SL Tutor in Beirut | Best Online Tuition in Beirut, Lebanon",
+    "h1": "Top IB Math AA SL Tutor in Beirut — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Beirut, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Beirut's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "slug": "/ib-math-aa-hl-tutor-beirut/",
+    "title": "IB Math AA HL Tutor in Beirut | Best Online Tuition in Beirut, Lebanon",
+    "h1": "Top IB Math AA HL Tutor in Beirut — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Beirut, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+2 (Beirut time), aligned to Beirut's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "slug": "/ib-math-ia-help-beirut/",
+    "title": "IB Math IA Help in Beirut | Best Online Tuition in Beirut, Lebanon",
+    "h1": "Top IB Math IA Help in Beirut — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Beirut, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+2 (Beirut time), aligned to Beirut's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Saudi Arabia",
+    "city": "Al Khobar",
+    "slug": "/ib-myp-maths-tutor-al-khobar/",
+    "title": "IB MYP Maths Tutor in Al Khobar | Best Online Tuition in Al Khobar, Saudi Arabia",
+    "h1": "Top IB MYP Maths Tutor in Al Khobar — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Al Khobar, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Khobar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Saudi Arabia",
+    "city": "Al Khobar",
+    "slug": "/ib-math-ai-sl-tutor-al-khobar/",
+    "title": "IB Math AI SL Tutor in Al Khobar | Best Online Tuition in Al Khobar, Saudi Arabia",
+    "h1": "Top IB Math AI SL Tutor in Al Khobar — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Al Khobar, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Khobar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Saudi Arabia",
+    "city": "Al Khobar",
+    "slug": "/ib-math-ai-hl-tutor-al-khobar/",
+    "title": "IB Math AI HL Tutor in Al Khobar | Best Online Tuition in Al Khobar, Saudi Arabia",
+    "h1": "Top IB Math AI HL Tutor in Al Khobar — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Al Khobar, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Khobar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Saudi Arabia",
+    "city": "Al Khobar",
+    "slug": "/ib-math-aa-sl-tutor-al-khobar/",
+    "title": "IB Math AA SL Tutor in Al Khobar | Best Online Tuition in Al Khobar, Saudi Arabia",
+    "h1": "Top IB Math AA SL Tutor in Al Khobar — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Al Khobar, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Khobar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Saudi Arabia",
+    "city": "Al Khobar",
+    "slug": "/ib-math-aa-hl-tutor-al-khobar/",
+    "title": "IB Math AA HL Tutor in Al Khobar | Best Online Tuition in Al Khobar, Saudi Arabia",
+    "h1": "Top IB Math AA HL Tutor in Al Khobar — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Al Khobar, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Khobar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Saudi Arabia",
+    "city": "Al Khobar",
+    "slug": "/ib-math-ia-help-al-khobar/",
+    "title": "IB Math IA Help in Al Khobar | Best Online Tuition in Al Khobar, Saudi Arabia",
+    "h1": "Top IB Math IA Help in Al Khobar — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Al Khobar, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Khobar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Saudi Arabia",
+    "city": "Jubail",
+    "slug": "/ib-myp-maths-tutor-jubail/",
+    "title": "IB MYP Maths Tutor in Jubail | Best Online Tuition in Jubail, Saudi Arabia",
+    "h1": "Top IB MYP Maths Tutor in Jubail — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Jubail, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Jubail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Saudi Arabia",
+    "city": "Jubail",
+    "slug": "/ib-math-ai-sl-tutor-jubail/",
+    "title": "IB Math AI SL Tutor in Jubail | Best Online Tuition in Jubail, Saudi Arabia",
+    "h1": "Top IB Math AI SL Tutor in Jubail — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Jubail, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Jubail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Saudi Arabia",
+    "city": "Jubail",
+    "slug": "/ib-math-ai-hl-tutor-jubail/",
+    "title": "IB Math AI HL Tutor in Jubail | Best Online Tuition in Jubail, Saudi Arabia",
+    "h1": "Top IB Math AI HL Tutor in Jubail — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Jubail, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Jubail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Saudi Arabia",
+    "city": "Jubail",
+    "slug": "/ib-math-aa-sl-tutor-jubail/",
+    "title": "IB Math AA SL Tutor in Jubail | Best Online Tuition in Jubail, Saudi Arabia",
+    "h1": "Top IB Math AA SL Tutor in Jubail — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Jubail, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Jubail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Saudi Arabia",
+    "city": "Jubail",
+    "slug": "/ib-math-aa-hl-tutor-jubail/",
+    "title": "IB Math AA HL Tutor in Jubail | Best Online Tuition in Jubail, Saudi Arabia",
+    "h1": "Top IB Math AA HL Tutor in Jubail — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Jubail, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Jubail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Saudi Arabia",
+    "city": "Jubail",
+    "slug": "/ib-math-ia-help-jubail/",
+    "title": "IB Math IA Help in Jubail | Best Online Tuition in Jubail, Saudi Arabia",
+    "h1": "Top IB Math IA Help in Jubail — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Jubail, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Jubail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Saudi Arabia",
+    "city": "Yanbu",
+    "slug": "/ib-myp-maths-tutor-yanbu/",
+    "title": "IB MYP Maths Tutor in Yanbu | Best Online Tuition in Yanbu, Saudi Arabia",
+    "h1": "Top IB MYP Maths Tutor in Yanbu — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Yanbu, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Yanbu's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Saudi Arabia",
+    "city": "Yanbu",
+    "slug": "/ib-math-ai-sl-tutor-yanbu/",
+    "title": "IB Math AI SL Tutor in Yanbu | Best Online Tuition in Yanbu, Saudi Arabia",
+    "h1": "Top IB Math AI SL Tutor in Yanbu — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Yanbu, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Yanbu's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Saudi Arabia",
+    "city": "Yanbu",
+    "slug": "/ib-math-ai-hl-tutor-yanbu/",
+    "title": "IB Math AI HL Tutor in Yanbu | Best Online Tuition in Yanbu, Saudi Arabia",
+    "h1": "Top IB Math AI HL Tutor in Yanbu — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Yanbu, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Yanbu's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Saudi Arabia",
+    "city": "Yanbu",
+    "slug": "/ib-math-aa-sl-tutor-yanbu/",
+    "title": "IB Math AA SL Tutor in Yanbu | Best Online Tuition in Yanbu, Saudi Arabia",
+    "h1": "Top IB Math AA SL Tutor in Yanbu — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Yanbu, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Yanbu's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Saudi Arabia",
+    "city": "Yanbu",
+    "slug": "/ib-math-aa-hl-tutor-yanbu/",
+    "title": "IB Math AA HL Tutor in Yanbu | Best Online Tuition in Yanbu, Saudi Arabia",
+    "h1": "Top IB Math AA HL Tutor in Yanbu — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Yanbu, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Yanbu's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Saudi Arabia",
+    "city": "Yanbu",
+    "slug": "/ib-math-ia-help-yanbu/",
+    "title": "IB Math IA Help in Yanbu | Best Online Tuition in Yanbu, Saudi Arabia",
+    "h1": "Top IB Math IA Help in Yanbu — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Yanbu, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Yanbu's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "United Arab Emirates",
+    "city": "Ajman",
+    "slug": "/ib-myp-maths-tutor-ajman/",
+    "title": "IB MYP Maths Tutor in Ajman | Best Online Tuition in Ajman, United Arab Emirates",
+    "h1": "Top IB MYP Maths Tutor in Ajman — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Ajman, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Ajman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "United Arab Emirates",
+    "city": "Ajman",
+    "slug": "/ib-math-ai-sl-tutor-ajman/",
+    "title": "IB Math AI SL Tutor in Ajman | Best Online Tuition in Ajman, United Arab Emirates",
+    "h1": "Top IB Math AI SL Tutor in Ajman — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Ajman, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Ajman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "United Arab Emirates",
+    "city": "Ajman",
+    "slug": "/ib-math-ai-hl-tutor-ajman/",
+    "title": "IB Math AI HL Tutor in Ajman | Best Online Tuition in Ajman, United Arab Emirates",
+    "h1": "Top IB Math AI HL Tutor in Ajman — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Ajman, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Ajman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "United Arab Emirates",
+    "city": "Ajman",
+    "slug": "/ib-math-aa-sl-tutor-ajman/",
+    "title": "IB Math AA SL Tutor in Ajman | Best Online Tuition in Ajman, United Arab Emirates",
+    "h1": "Top IB Math AA SL Tutor in Ajman — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Ajman, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Ajman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "United Arab Emirates",
+    "city": "Ajman",
+    "slug": "/ib-math-aa-hl-tutor-ajman/",
+    "title": "IB Math AA HL Tutor in Ajman | Best Online Tuition in Ajman, United Arab Emirates",
+    "h1": "Top IB Math AA HL Tutor in Ajman — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Ajman, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Ajman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "United Arab Emirates",
+    "city": "Ajman",
+    "slug": "/ib-math-ia-help-ajman/",
+    "title": "IB Math IA Help in Ajman | Best Online Tuition in Ajman, United Arab Emirates",
+    "h1": "Top IB Math IA Help in Ajman — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Ajman, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Ajman's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "United Arab Emirates",
+    "city": "Fujairah",
+    "slug": "/ib-myp-maths-tutor-fujairah/",
+    "title": "IB MYP Maths Tutor in Fujairah | Best Online Tuition in Fujairah, United Arab Emirates",
+    "h1": "Top IB MYP Maths Tutor in Fujairah — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Fujairah, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Fujairah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "United Arab Emirates",
+    "city": "Fujairah",
+    "slug": "/ib-math-ai-sl-tutor-fujairah/",
+    "title": "IB Math AI SL Tutor in Fujairah | Best Online Tuition in Fujairah, United Arab Emirates",
+    "h1": "Top IB Math AI SL Tutor in Fujairah — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Fujairah, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Fujairah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "United Arab Emirates",
+    "city": "Fujairah",
+    "slug": "/ib-math-ai-hl-tutor-fujairah/",
+    "title": "IB Math AI HL Tutor in Fujairah | Best Online Tuition in Fujairah, United Arab Emirates",
+    "h1": "Top IB Math AI HL Tutor in Fujairah — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Fujairah, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Fujairah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "United Arab Emirates",
+    "city": "Fujairah",
+    "slug": "/ib-math-aa-sl-tutor-fujairah/",
+    "title": "IB Math AA SL Tutor in Fujairah | Best Online Tuition in Fujairah, United Arab Emirates",
+    "h1": "Top IB Math AA SL Tutor in Fujairah — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Fujairah, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Fujairah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "United Arab Emirates",
+    "city": "Fujairah",
+    "slug": "/ib-math-aa-hl-tutor-fujairah/",
+    "title": "IB Math AA HL Tutor in Fujairah | Best Online Tuition in Fujairah, United Arab Emirates",
+    "h1": "Top IB Math AA HL Tutor in Fujairah — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Fujairah, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Fujairah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "United Arab Emirates",
+    "city": "Fujairah",
+    "slug": "/ib-math-ia-help-fujairah/",
+    "title": "IB Math IA Help in Fujairah | Best Online Tuition in Fujairah, United Arab Emirates",
+    "h1": "Top IB Math IA Help in Fujairah — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Fujairah, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Fujairah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Qatar",
+    "city": "Al Rayyan",
+    "slug": "/ib-myp-maths-tutor-al-rayyan/",
+    "title": "IB MYP Maths Tutor in Al Rayyan | Best Online Tuition in Al Rayyan, Qatar",
+    "h1": "Top IB MYP Maths Tutor in Al Rayyan — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Al Rayyan, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Rayyan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Qatar",
+    "city": "Al Rayyan",
+    "slug": "/ib-math-ai-sl-tutor-al-rayyan/",
+    "title": "IB Math AI SL Tutor in Al Rayyan | Best Online Tuition in Al Rayyan, Qatar",
+    "h1": "Top IB Math AI SL Tutor in Al Rayyan — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Al Rayyan, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Rayyan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Qatar",
+    "city": "Al Rayyan",
+    "slug": "/ib-math-ai-hl-tutor-al-rayyan/",
+    "title": "IB Math AI HL Tutor in Al Rayyan | Best Online Tuition in Al Rayyan, Qatar",
+    "h1": "Top IB Math AI HL Tutor in Al Rayyan — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Al Rayyan, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Rayyan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Qatar",
+    "city": "Al Rayyan",
+    "slug": "/ib-math-aa-sl-tutor-al-rayyan/",
+    "title": "IB Math AA SL Tutor in Al Rayyan | Best Online Tuition in Al Rayyan, Qatar",
+    "h1": "Top IB Math AA SL Tutor in Al Rayyan — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Al Rayyan, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Rayyan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Qatar",
+    "city": "Al Rayyan",
+    "slug": "/ib-math-aa-hl-tutor-al-rayyan/",
+    "title": "IB Math AA HL Tutor in Al Rayyan | Best Online Tuition in Al Rayyan, Qatar",
+    "h1": "Top IB Math AA HL Tutor in Al Rayyan — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Al Rayyan, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Rayyan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Qatar",
+    "city": "Al Rayyan",
+    "slug": "/ib-math-ia-help-al-rayyan/",
+    "title": "IB Math IA Help in Al Rayyan | Best Online Tuition in Al Rayyan, Qatar",
+    "h1": "Top IB Math IA Help in Al Rayyan — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Al Rayyan, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Rayyan's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Qatar",
+    "city": "Lusail",
+    "slug": "/ib-myp-maths-tutor-lusail/",
+    "title": "IB MYP Maths Tutor in Lusail | Best Online Tuition in Lusail, Qatar",
+    "h1": "Top IB MYP Maths Tutor in Lusail — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Lusail, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Lusail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Qatar",
+    "city": "Lusail",
+    "slug": "/ib-math-ai-sl-tutor-lusail/",
+    "title": "IB Math AI SL Tutor in Lusail | Best Online Tuition in Lusail, Qatar",
+    "h1": "Top IB Math AI SL Tutor in Lusail — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Lusail, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Lusail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Qatar",
+    "city": "Lusail",
+    "slug": "/ib-math-ai-hl-tutor-lusail/",
+    "title": "IB Math AI HL Tutor in Lusail | Best Online Tuition in Lusail, Qatar",
+    "h1": "Top IB Math AI HL Tutor in Lusail — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Lusail, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Lusail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Qatar",
+    "city": "Lusail",
+    "slug": "/ib-math-aa-sl-tutor-lusail/",
+    "title": "IB Math AA SL Tutor in Lusail | Best Online Tuition in Lusail, Qatar",
+    "h1": "Top IB Math AA SL Tutor in Lusail — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Lusail, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Lusail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Qatar",
+    "city": "Lusail",
+    "slug": "/ib-math-aa-hl-tutor-lusail/",
+    "title": "IB Math AA HL Tutor in Lusail | Best Online Tuition in Lusail, Qatar",
+    "h1": "Top IB Math AA HL Tutor in Lusail — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Lusail, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Lusail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Qatar",
+    "city": "Lusail",
+    "slug": "/ib-math-ia-help-lusail/",
+    "title": "IB Math IA Help in Lusail | Best Online Tuition in Lusail, Qatar",
+    "h1": "Top IB Math IA Help in Lusail — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Lusail, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Lusail's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Kuwait",
+    "city": "Hawalli",
+    "slug": "/ib-myp-maths-tutor-hawalli/",
+    "title": "IB MYP Maths Tutor in Hawalli | Best Online Tuition in Hawalli, Kuwait",
+    "h1": "Top IB MYP Maths Tutor in Hawalli — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Hawalli, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Hawalli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Kuwait",
+    "city": "Hawalli",
+    "slug": "/ib-math-ai-sl-tutor-hawalli/",
+    "title": "IB Math AI SL Tutor in Hawalli | Best Online Tuition in Hawalli, Kuwait",
+    "h1": "Top IB Math AI SL Tutor in Hawalli — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Hawalli, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Hawalli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Kuwait",
+    "city": "Hawalli",
+    "slug": "/ib-math-ai-hl-tutor-hawalli/",
+    "title": "IB Math AI HL Tutor in Hawalli | Best Online Tuition in Hawalli, Kuwait",
+    "h1": "Top IB Math AI HL Tutor in Hawalli — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Hawalli, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Hawalli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Kuwait",
+    "city": "Hawalli",
+    "slug": "/ib-math-aa-sl-tutor-hawalli/",
+    "title": "IB Math AA SL Tutor in Hawalli | Best Online Tuition in Hawalli, Kuwait",
+    "h1": "Top IB Math AA SL Tutor in Hawalli — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Hawalli, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Hawalli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Kuwait",
+    "city": "Hawalli",
+    "slug": "/ib-math-aa-hl-tutor-hawalli/",
+    "title": "IB Math AA HL Tutor in Hawalli | Best Online Tuition in Hawalli, Kuwait",
+    "h1": "Top IB Math AA HL Tutor in Hawalli — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Hawalli, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Hawalli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Kuwait",
+    "city": "Hawalli",
+    "slug": "/ib-math-ia-help-hawalli/",
+    "title": "IB Math IA Help in Hawalli | Best Online Tuition in Hawalli, Kuwait",
+    "h1": "Top IB Math IA Help in Hawalli — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Hawalli, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Hawalli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Kuwait",
+    "city": "Salmiya",
+    "slug": "/ib-myp-maths-tutor-salmiya/",
+    "title": "IB MYP Maths Tutor in Salmiya | Best Online Tuition in Salmiya, Kuwait",
+    "h1": "Top IB MYP Maths Tutor in Salmiya — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Salmiya, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Salmiya's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Kuwait",
+    "city": "Salmiya",
+    "slug": "/ib-math-ai-sl-tutor-salmiya/",
+    "title": "IB Math AI SL Tutor in Salmiya | Best Online Tuition in Salmiya, Kuwait",
+    "h1": "Top IB Math AI SL Tutor in Salmiya — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Salmiya, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Salmiya's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Kuwait",
+    "city": "Salmiya",
+    "slug": "/ib-math-ai-hl-tutor-salmiya/",
+    "title": "IB Math AI HL Tutor in Salmiya | Best Online Tuition in Salmiya, Kuwait",
+    "h1": "Top IB Math AI HL Tutor in Salmiya — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Salmiya, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Salmiya's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Kuwait",
+    "city": "Salmiya",
+    "slug": "/ib-math-aa-sl-tutor-salmiya/",
+    "title": "IB Math AA SL Tutor in Salmiya | Best Online Tuition in Salmiya, Kuwait",
+    "h1": "Top IB Math AA SL Tutor in Salmiya — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Salmiya, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Salmiya's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Kuwait",
+    "city": "Salmiya",
+    "slug": "/ib-math-aa-hl-tutor-salmiya/",
+    "title": "IB Math AA HL Tutor in Salmiya | Best Online Tuition in Salmiya, Kuwait",
+    "h1": "Top IB Math AA HL Tutor in Salmiya — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Salmiya, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Salmiya's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Kuwait",
+    "city": "Salmiya",
+    "slug": "/ib-math-ia-help-salmiya/",
+    "title": "IB Math IA Help in Salmiya | Best Online Tuition in Salmiya, Kuwait",
+    "h1": "Top IB Math IA Help in Salmiya — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Salmiya, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Salmiya's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Kuwait",
+    "city": "Al Ahmadi",
+    "slug": "/ib-myp-maths-tutor-al-ahmadi/",
+    "title": "IB MYP Maths Tutor in Al Ahmadi | Best Online Tuition in Al Ahmadi, Kuwait",
+    "h1": "Top IB MYP Maths Tutor in Al Ahmadi — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Al Ahmadi, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Ahmadi's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Kuwait",
+    "city": "Al Ahmadi",
+    "slug": "/ib-math-ai-sl-tutor-al-ahmadi/",
+    "title": "IB Math AI SL Tutor in Al Ahmadi | Best Online Tuition in Al Ahmadi, Kuwait",
+    "h1": "Top IB Math AI SL Tutor in Al Ahmadi — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Al Ahmadi, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Ahmadi's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Kuwait",
+    "city": "Al Ahmadi",
+    "slug": "/ib-math-ai-hl-tutor-al-ahmadi/",
+    "title": "IB Math AI HL Tutor in Al Ahmadi | Best Online Tuition in Al Ahmadi, Kuwait",
+    "h1": "Top IB Math AI HL Tutor in Al Ahmadi — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Al Ahmadi, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Ahmadi's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Kuwait",
+    "city": "Al Ahmadi",
+    "slug": "/ib-math-aa-sl-tutor-al-ahmadi/",
+    "title": "IB Math AA SL Tutor in Al Ahmadi | Best Online Tuition in Al Ahmadi, Kuwait",
+    "h1": "Top IB Math AA SL Tutor in Al Ahmadi — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Al Ahmadi, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Ahmadi's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Kuwait",
+    "city": "Al Ahmadi",
+    "slug": "/ib-math-aa-hl-tutor-al-ahmadi/",
+    "title": "IB Math AA HL Tutor in Al Ahmadi | Best Online Tuition in Al Ahmadi, Kuwait",
+    "h1": "Top IB Math AA HL Tutor in Al Ahmadi — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Al Ahmadi, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Ahmadi's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Kuwait",
+    "city": "Al Ahmadi",
+    "slug": "/ib-math-ia-help-al-ahmadi/",
+    "title": "IB Math IA Help in Al Ahmadi | Best Online Tuition in Al Ahmadi, Kuwait",
+    "h1": "Top IB Math IA Help in Al Ahmadi — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Al Ahmadi, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Al Ahmadi's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Bahrain",
+    "city": "Riffa",
+    "slug": "/ib-myp-maths-tutor-riffa/",
+    "title": "IB MYP Maths Tutor in Riffa | Best Online Tuition in Riffa, Bahrain",
+    "h1": "Top IB MYP Maths Tutor in Riffa — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Riffa, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Riffa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Bahrain",
+    "city": "Riffa",
+    "slug": "/ib-math-ai-sl-tutor-riffa/",
+    "title": "IB Math AI SL Tutor in Riffa | Best Online Tuition in Riffa, Bahrain",
+    "h1": "Top IB Math AI SL Tutor in Riffa — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Riffa, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Riffa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Bahrain",
+    "city": "Riffa",
+    "slug": "/ib-math-ai-hl-tutor-riffa/",
+    "title": "IB Math AI HL Tutor in Riffa | Best Online Tuition in Riffa, Bahrain",
+    "h1": "Top IB Math AI HL Tutor in Riffa — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Riffa, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Riffa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Bahrain",
+    "city": "Riffa",
+    "slug": "/ib-math-aa-sl-tutor-riffa/",
+    "title": "IB Math AA SL Tutor in Riffa | Best Online Tuition in Riffa, Bahrain",
+    "h1": "Top IB Math AA SL Tutor in Riffa — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Riffa, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Riffa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Bahrain",
+    "city": "Riffa",
+    "slug": "/ib-math-aa-hl-tutor-riffa/",
+    "title": "IB Math AA HL Tutor in Riffa | Best Online Tuition in Riffa, Bahrain",
+    "h1": "Top IB Math AA HL Tutor in Riffa — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Riffa, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Riffa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Bahrain",
+    "city": "Riffa",
+    "slug": "/ib-math-ia-help-riffa/",
+    "title": "IB Math IA Help in Riffa | Best Online Tuition in Riffa, Bahrain",
+    "h1": "Top IB Math IA Help in Riffa — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Riffa, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Riffa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Bahrain",
+    "city": "Muharraq",
+    "slug": "/ib-myp-maths-tutor-muharraq/",
+    "title": "IB MYP Maths Tutor in Muharraq | Best Online Tuition in Muharraq, Bahrain",
+    "h1": "Top IB MYP Maths Tutor in Muharraq — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Muharraq, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Muharraq's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Bahrain",
+    "city": "Muharraq",
+    "slug": "/ib-math-ai-sl-tutor-muharraq/",
+    "title": "IB Math AI SL Tutor in Muharraq | Best Online Tuition in Muharraq, Bahrain",
+    "h1": "Top IB Math AI SL Tutor in Muharraq — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Muharraq, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Muharraq's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Bahrain",
+    "city": "Muharraq",
+    "slug": "/ib-math-ai-hl-tutor-muharraq/",
+    "title": "IB Math AI HL Tutor in Muharraq | Best Online Tuition in Muharraq, Bahrain",
+    "h1": "Top IB Math AI HL Tutor in Muharraq — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Muharraq, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Muharraq's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Bahrain",
+    "city": "Muharraq",
+    "slug": "/ib-math-aa-sl-tutor-muharraq/",
+    "title": "IB Math AA SL Tutor in Muharraq | Best Online Tuition in Muharraq, Bahrain",
+    "h1": "Top IB Math AA SL Tutor in Muharraq — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Muharraq, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Muharraq's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Bahrain",
+    "city": "Muharraq",
+    "slug": "/ib-math-aa-hl-tutor-muharraq/",
+    "title": "IB Math AA HL Tutor in Muharraq | Best Online Tuition in Muharraq, Bahrain",
+    "h1": "Top IB Math AA HL Tutor in Muharraq — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Muharraq, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Muharraq's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Bahrain",
+    "city": "Muharraq",
+    "slug": "/ib-math-ia-help-muharraq/",
+    "title": "IB Math IA Help in Muharraq | Best Online Tuition in Muharraq, Bahrain",
+    "h1": "Top IB Math IA Help in Muharraq — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Muharraq, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Muharraq's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Bahrain",
+    "city": "Isa Town",
+    "slug": "/ib-myp-maths-tutor-isa-town/",
+    "title": "IB MYP Maths Tutor in Isa Town | Best Online Tuition in Isa Town, Bahrain",
+    "h1": "Top IB MYP Maths Tutor in Isa Town — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Isa Town, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Isa Town's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Bahrain",
+    "city": "Isa Town",
+    "slug": "/ib-math-ai-sl-tutor-isa-town/",
+    "title": "IB Math AI SL Tutor in Isa Town | Best Online Tuition in Isa Town, Bahrain",
+    "h1": "Top IB Math AI SL Tutor in Isa Town — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Isa Town, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Isa Town's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Bahrain",
+    "city": "Isa Town",
+    "slug": "/ib-math-ai-hl-tutor-isa-town/",
+    "title": "IB Math AI HL Tutor in Isa Town | Best Online Tuition in Isa Town, Bahrain",
+    "h1": "Top IB Math AI HL Tutor in Isa Town — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Isa Town, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Isa Town's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Bahrain",
+    "city": "Isa Town",
+    "slug": "/ib-math-aa-sl-tutor-isa-town/",
+    "title": "IB Math AA SL Tutor in Isa Town | Best Online Tuition in Isa Town, Bahrain",
+    "h1": "Top IB Math AA SL Tutor in Isa Town — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Isa Town, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Isa Town's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Bahrain",
+    "city": "Isa Town",
+    "slug": "/ib-math-aa-hl-tutor-isa-town/",
+    "title": "IB Math AA HL Tutor in Isa Town | Best Online Tuition in Isa Town, Bahrain",
+    "h1": "Top IB Math AA HL Tutor in Isa Town — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Isa Town, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Isa Town's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Bahrain",
+    "city": "Isa Town",
+    "slug": "/ib-math-ia-help-isa-town/",
+    "title": "IB Math IA Help in Isa Town | Best Online Tuition in Isa Town, Bahrain",
+    "h1": "Top IB Math IA Help in Isa Town — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Isa Town, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3 (Arabia Standard Time), aligned to Isa Town's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Oman",
+    "city": "Salalah",
+    "slug": "/ib-myp-maths-tutor-salalah/",
+    "title": "IB MYP Maths Tutor in Salalah | Best Online Tuition in Salalah, Oman",
+    "h1": "Top IB MYP Maths Tutor in Salalah — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Salalah, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Salalah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Oman",
+    "city": "Salalah",
+    "slug": "/ib-math-ai-sl-tutor-salalah/",
+    "title": "IB Math AI SL Tutor in Salalah | Best Online Tuition in Salalah, Oman",
+    "h1": "Top IB Math AI SL Tutor in Salalah — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Salalah, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Salalah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Oman",
+    "city": "Salalah",
+    "slug": "/ib-math-ai-hl-tutor-salalah/",
+    "title": "IB Math AI HL Tutor in Salalah | Best Online Tuition in Salalah, Oman",
+    "h1": "Top IB Math AI HL Tutor in Salalah — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Salalah, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Salalah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Oman",
+    "city": "Salalah",
+    "slug": "/ib-math-aa-sl-tutor-salalah/",
+    "title": "IB Math AA SL Tutor in Salalah | Best Online Tuition in Salalah, Oman",
+    "h1": "Top IB Math AA SL Tutor in Salalah — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Salalah, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Salalah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Oman",
+    "city": "Salalah",
+    "slug": "/ib-math-aa-hl-tutor-salalah/",
+    "title": "IB Math AA HL Tutor in Salalah | Best Online Tuition in Salalah, Oman",
+    "h1": "Top IB Math AA HL Tutor in Salalah — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Salalah, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Salalah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Oman",
+    "city": "Salalah",
+    "slug": "/ib-math-ia-help-salalah/",
+    "title": "IB Math IA Help in Salalah | Best Online Tuition in Salalah, Oman",
+    "h1": "Top IB Math IA Help in Salalah — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Salalah, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Salalah's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Oman",
+    "city": "Sohar",
+    "slug": "/ib-myp-maths-tutor-sohar/",
+    "title": "IB MYP Maths Tutor in Sohar | Best Online Tuition in Sohar, Oman",
+    "h1": "Top IB MYP Maths Tutor in Sohar — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Sohar, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Sohar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Oman",
+    "city": "Sohar",
+    "slug": "/ib-math-ai-sl-tutor-sohar/",
+    "title": "IB Math AI SL Tutor in Sohar | Best Online Tuition in Sohar, Oman",
+    "h1": "Top IB Math AI SL Tutor in Sohar — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Sohar, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Sohar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Oman",
+    "city": "Sohar",
+    "slug": "/ib-math-ai-hl-tutor-sohar/",
+    "title": "IB Math AI HL Tutor in Sohar | Best Online Tuition in Sohar, Oman",
+    "h1": "Top IB Math AI HL Tutor in Sohar — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Sohar, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Sohar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Oman",
+    "city": "Sohar",
+    "slug": "/ib-math-aa-sl-tutor-sohar/",
+    "title": "IB Math AA SL Tutor in Sohar | Best Online Tuition in Sohar, Oman",
+    "h1": "Top IB Math AA SL Tutor in Sohar — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Sohar, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Sohar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Oman",
+    "city": "Sohar",
+    "slug": "/ib-math-aa-hl-tutor-sohar/",
+    "title": "IB Math AA HL Tutor in Sohar | Best Online Tuition in Sohar, Oman",
+    "h1": "Top IB Math AA HL Tutor in Sohar — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Sohar, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Sohar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Oman",
+    "city": "Sohar",
+    "slug": "/ib-math-ia-help-sohar/",
+    "title": "IB Math IA Help in Sohar | Best Online Tuition in Sohar, Oman",
+    "h1": "Top IB Math IA Help in Sohar — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Sohar, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Sohar's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Oman",
+    "city": "Nizwa",
+    "slug": "/ib-myp-maths-tutor-nizwa/",
+    "title": "IB MYP Maths Tutor in Nizwa | Best Online Tuition in Nizwa, Oman",
+    "h1": "Top IB MYP Maths Tutor in Nizwa — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Nizwa, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Nizwa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Oman",
+    "city": "Nizwa",
+    "slug": "/ib-math-ai-sl-tutor-nizwa/",
+    "title": "IB Math AI SL Tutor in Nizwa | Best Online Tuition in Nizwa, Oman",
+    "h1": "Top IB Math AI SL Tutor in Nizwa — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Nizwa, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Nizwa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Oman",
+    "city": "Nizwa",
+    "slug": "/ib-math-ai-hl-tutor-nizwa/",
+    "title": "IB Math AI HL Tutor in Nizwa | Best Online Tuition in Nizwa, Oman",
+    "h1": "Top IB Math AI HL Tutor in Nizwa — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Nizwa, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Nizwa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Oman",
+    "city": "Nizwa",
+    "slug": "/ib-math-aa-sl-tutor-nizwa/",
+    "title": "IB Math AA SL Tutor in Nizwa | Best Online Tuition in Nizwa, Oman",
+    "h1": "Top IB Math AA SL Tutor in Nizwa — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Nizwa, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Nizwa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Oman",
+    "city": "Nizwa",
+    "slug": "/ib-math-aa-hl-tutor-nizwa/",
+    "title": "IB Math AA HL Tutor in Nizwa | Best Online Tuition in Nizwa, Oman",
+    "h1": "Top IB Math AA HL Tutor in Nizwa — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Nizwa, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Nizwa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Oman",
+    "city": "Nizwa",
+    "slug": "/ib-math-ia-help-nizwa/",
+    "title": "IB Math IA Help in Nizwa | Best Online Tuition in Nizwa, Oman",
+    "h1": "Top IB Math IA Help in Nizwa — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Nizwa, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+4 (Gulf Standard Time), aligned to Nizwa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Jordan",
+    "city": "Zarqa",
+    "slug": "/ib-myp-maths-tutor-zarqa/",
+    "title": "IB MYP Maths Tutor in Zarqa | Best Online Tuition in Zarqa, Jordan",
+    "h1": "Top IB MYP Maths Tutor in Zarqa — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Zarqa, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3, aligned to Zarqa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Jordan",
+    "city": "Zarqa",
+    "slug": "/ib-math-ai-sl-tutor-zarqa/",
+    "title": "IB Math AI SL Tutor in Zarqa | Best Online Tuition in Zarqa, Jordan",
+    "h1": "Top IB Math AI SL Tutor in Zarqa — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Zarqa, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3, aligned to Zarqa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Jordan",
+    "city": "Zarqa",
+    "slug": "/ib-math-ai-hl-tutor-zarqa/",
+    "title": "IB Math AI HL Tutor in Zarqa | Best Online Tuition in Zarqa, Jordan",
+    "h1": "Top IB Math AI HL Tutor in Zarqa — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Zarqa, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3, aligned to Zarqa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Jordan",
+    "city": "Zarqa",
+    "slug": "/ib-math-aa-sl-tutor-zarqa/",
+    "title": "IB Math AA SL Tutor in Zarqa | Best Online Tuition in Zarqa, Jordan",
+    "h1": "Top IB Math AA SL Tutor in Zarqa — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Zarqa, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3, aligned to Zarqa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Jordan",
+    "city": "Zarqa",
+    "slug": "/ib-math-aa-hl-tutor-zarqa/",
+    "title": "IB Math AA HL Tutor in Zarqa | Best Online Tuition in Zarqa, Jordan",
+    "h1": "Top IB Math AA HL Tutor in Zarqa — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Zarqa, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3, aligned to Zarqa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Jordan",
+    "city": "Zarqa",
+    "slug": "/ib-math-ia-help-zarqa/",
+    "title": "IB Math IA Help in Zarqa | Best Online Tuition in Zarqa, Jordan",
+    "h1": "Top IB Math IA Help in Zarqa — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Zarqa, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3, aligned to Zarqa's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Jordan",
+    "city": "Irbid",
+    "slug": "/ib-myp-maths-tutor-irbid/",
+    "title": "IB MYP Maths Tutor in Irbid | Best Online Tuition in Irbid, Jordan",
+    "h1": "Top IB MYP Maths Tutor in Irbid — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Irbid, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3, aligned to Irbid's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Jordan",
+    "city": "Irbid",
+    "slug": "/ib-math-ai-sl-tutor-irbid/",
+    "title": "IB Math AI SL Tutor in Irbid | Best Online Tuition in Irbid, Jordan",
+    "h1": "Top IB Math AI SL Tutor in Irbid — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Irbid, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3, aligned to Irbid's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Jordan",
+    "city": "Irbid",
+    "slug": "/ib-math-ai-hl-tutor-irbid/",
+    "title": "IB Math AI HL Tutor in Irbid | Best Online Tuition in Irbid, Jordan",
+    "h1": "Top IB Math AI HL Tutor in Irbid — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Irbid, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3, aligned to Irbid's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Jordan",
+    "city": "Irbid",
+    "slug": "/ib-math-aa-sl-tutor-irbid/",
+    "title": "IB Math AA SL Tutor in Irbid | Best Online Tuition in Irbid, Jordan",
+    "h1": "Top IB Math AA SL Tutor in Irbid — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Irbid, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3, aligned to Irbid's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Jordan",
+    "city": "Irbid",
+    "slug": "/ib-math-aa-hl-tutor-irbid/",
+    "title": "IB Math AA HL Tutor in Irbid | Best Online Tuition in Irbid, Jordan",
+    "h1": "Top IB Math AA HL Tutor in Irbid — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Irbid, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3, aligned to Irbid's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Jordan",
+    "city": "Irbid",
+    "slug": "/ib-math-ia-help-irbid/",
+    "title": "IB Math IA Help in Irbid | Best Online Tuition in Irbid, Jordan",
+    "h1": "Top IB Math IA Help in Irbid — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Irbid, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3, aligned to Irbid's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Jordan",
+    "city": "Aqaba",
+    "slug": "/ib-myp-maths-tutor-aqaba/",
+    "title": "IB MYP Maths Tutor in Aqaba | Best Online Tuition in Aqaba, Jordan",
+    "h1": "Top IB MYP Maths Tutor in Aqaba — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Aqaba, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+3, aligned to Aqaba's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Jordan",
+    "city": "Aqaba",
+    "slug": "/ib-math-ai-sl-tutor-aqaba/",
+    "title": "IB Math AI SL Tutor in Aqaba | Best Online Tuition in Aqaba, Jordan",
+    "h1": "Top IB Math AI SL Tutor in Aqaba — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Aqaba, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+3, aligned to Aqaba's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Jordan",
+    "city": "Aqaba",
+    "slug": "/ib-math-ai-hl-tutor-aqaba/",
+    "title": "IB Math AI HL Tutor in Aqaba | Best Online Tuition in Aqaba, Jordan",
+    "h1": "Top IB Math AI HL Tutor in Aqaba — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Aqaba, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+3, aligned to Aqaba's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Jordan",
+    "city": "Aqaba",
+    "slug": "/ib-math-aa-sl-tutor-aqaba/",
+    "title": "IB Math AA SL Tutor in Aqaba | Best Online Tuition in Aqaba, Jordan",
+    "h1": "Top IB Math AA SL Tutor in Aqaba — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Aqaba, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+3, aligned to Aqaba's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Jordan",
+    "city": "Aqaba",
+    "slug": "/ib-math-aa-hl-tutor-aqaba/",
+    "title": "IB Math AA HL Tutor in Aqaba | Best Online Tuition in Aqaba, Jordan",
+    "h1": "Top IB Math AA HL Tutor in Aqaba — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Aqaba, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+3, aligned to Aqaba's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Jordan",
+    "city": "Aqaba",
+    "slug": "/ib-math-ia-help-aqaba/",
+    "title": "IB Math IA Help in Aqaba | Best Online Tuition in Aqaba, Jordan",
+    "h1": "Top IB Math IA Help in Aqaba — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Aqaba, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+3, aligned to Aqaba's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "slug": "/ib-myp-maths-tutor-tripoli/",
+    "title": "IB MYP Maths Tutor in Tripoli | Best Online Tuition in Tripoli, Lebanon",
+    "h1": "Top IB MYP Maths Tutor in Tripoli — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Tripoli, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+2 (Beirut time), aligned to Tripoli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "slug": "/ib-math-ai-sl-tutor-tripoli/",
+    "title": "IB Math AI SL Tutor in Tripoli | Best Online Tuition in Tripoli, Lebanon",
+    "h1": "Top IB Math AI SL Tutor in Tripoli — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Tripoli, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+2 (Beirut time), aligned to Tripoli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "slug": "/ib-math-ai-hl-tutor-tripoli/",
+    "title": "IB Math AI HL Tutor in Tripoli | Best Online Tuition in Tripoli, Lebanon",
+    "h1": "Top IB Math AI HL Tutor in Tripoli — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Tripoli, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Tripoli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "slug": "/ib-math-aa-sl-tutor-tripoli/",
+    "title": "IB Math AA SL Tutor in Tripoli | Best Online Tuition in Tripoli, Lebanon",
+    "h1": "Top IB Math AA SL Tutor in Tripoli — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Tripoli, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Tripoli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "slug": "/ib-math-aa-hl-tutor-tripoli/",
+    "title": "IB Math AA HL Tutor in Tripoli | Best Online Tuition in Tripoli, Lebanon",
+    "h1": "Top IB Math AA HL Tutor in Tripoli — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Tripoli, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+2 (Beirut time), aligned to Tripoli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Lebanon",
+    "city": "Tripoli",
+    "slug": "/ib-math-ia-help-tripoli/",
+    "title": "IB Math IA Help in Tripoli | Best Online Tuition in Tripoli, Lebanon",
+    "h1": "Top IB Math IA Help in Tripoli — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Tripoli, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+2 (Beirut time), aligned to Tripoli's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Lebanon",
+    "city": "Sidon",
+    "slug": "/ib-myp-maths-tutor-sidon/",
+    "title": "IB MYP Maths Tutor in Sidon | Best Online Tuition in Sidon, Lebanon",
+    "h1": "Top IB MYP Maths Tutor in Sidon — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Sidon, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+2 (Beirut time), aligned to Sidon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Lebanon",
+    "city": "Sidon",
+    "slug": "/ib-math-ai-sl-tutor-sidon/",
+    "title": "IB Math AI SL Tutor in Sidon | Best Online Tuition in Sidon, Lebanon",
+    "h1": "Top IB Math AI SL Tutor in Sidon — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Sidon, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+2 (Beirut time), aligned to Sidon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Lebanon",
+    "city": "Sidon",
+    "slug": "/ib-math-ai-hl-tutor-sidon/",
+    "title": "IB Math AI HL Tutor in Sidon | Best Online Tuition in Sidon, Lebanon",
+    "h1": "Top IB Math AI HL Tutor in Sidon — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Sidon, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Sidon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Lebanon",
+    "city": "Sidon",
+    "slug": "/ib-math-aa-sl-tutor-sidon/",
+    "title": "IB Math AA SL Tutor in Sidon | Best Online Tuition in Sidon, Lebanon",
+    "h1": "Top IB Math AA SL Tutor in Sidon — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Sidon, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Sidon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Lebanon",
+    "city": "Sidon",
+    "slug": "/ib-math-aa-hl-tutor-sidon/",
+    "title": "IB Math AA HL Tutor in Sidon | Best Online Tuition in Sidon, Lebanon",
+    "h1": "Top IB Math AA HL Tutor in Sidon — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Sidon, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+2 (Beirut time), aligned to Sidon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Lebanon",
+    "city": "Sidon",
+    "slug": "/ib-math-ia-help-sidon/",
+    "title": "IB Math IA Help in Sidon | Best Online Tuition in Sidon, Lebanon",
+    "h1": "Top IB Math IA Help in Sidon — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Sidon, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+2 (Beirut time), aligned to Sidon's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Lebanon",
+    "city": "Jounieh",
+    "slug": "/ib-myp-maths-tutor-jounieh/",
+    "title": "IB MYP Maths Tutor in Jounieh | Best Online Tuition in Jounieh, Lebanon",
+    "h1": "Top IB MYP Maths Tutor in Jounieh — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Jounieh, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+2 (Beirut time), aligned to Jounieh's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Lebanon",
+    "city": "Jounieh",
+    "slug": "/ib-math-ai-sl-tutor-jounieh/",
+    "title": "IB Math AI SL Tutor in Jounieh | Best Online Tuition in Jounieh, Lebanon",
+    "h1": "Top IB Math AI SL Tutor in Jounieh — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Jounieh, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+2 (Beirut time), aligned to Jounieh's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Lebanon",
+    "city": "Jounieh",
+    "slug": "/ib-math-ai-hl-tutor-jounieh/",
+    "title": "IB Math AI HL Tutor in Jounieh | Best Online Tuition in Jounieh, Lebanon",
+    "h1": "Top IB Math AI HL Tutor in Jounieh — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Jounieh, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Jounieh's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Lebanon",
+    "city": "Jounieh",
+    "slug": "/ib-math-aa-sl-tutor-jounieh/",
+    "title": "IB Math AA SL Tutor in Jounieh | Best Online Tuition in Jounieh, Lebanon",
+    "h1": "Top IB Math AA SL Tutor in Jounieh — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Jounieh, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Jounieh's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Lebanon",
+    "city": "Jounieh",
+    "slug": "/ib-math-aa-hl-tutor-jounieh/",
+    "title": "IB Math AA HL Tutor in Jounieh | Best Online Tuition in Jounieh, Lebanon",
+    "h1": "Top IB Math AA HL Tutor in Jounieh — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Jounieh, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+2 (Beirut time), aligned to Jounieh's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Lebanon",
+    "city": "Jounieh",
+    "slug": "/ib-math-ia-help-jounieh/",
+    "title": "IB Math IA Help in Jounieh | Best Online Tuition in Jounieh, Lebanon",
+    "h1": "Top IB Math IA Help in Jounieh — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Jounieh, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+2 (Beirut time), aligned to Jounieh's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "myp",
+    "country": "Lebanon",
+    "city": "Byblos",
+    "slug": "/ib-myp-maths-tutor-byblos/",
+    "title": "IB MYP Maths Tutor in Byblos | Best Online Tuition in Byblos, Lebanon",
+    "h1": "Top IB MYP Maths Tutor in Byblos — Personalized Online Tuition",
+    "meta_desc": "IB MYP Maths tutoring in Byblos, covering Criteria A to D, investigations, and clear written method. One-to-one online lessons on GMT+2 (Beirut time), aligned to Byblos's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "myp",
+      "slug": "ib-myp-maths",
+      "name": "IB MYP Maths",
+      "level": "MYP"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-sl",
+    "country": "Lebanon",
+    "city": "Byblos",
+    "slug": "/ib-math-ai-sl-tutor-byblos/",
+    "title": "IB Math AI SL Tutor in Byblos | Best Online Tuition in Byblos, Lebanon",
+    "h1": "Top IB Math AI SL Tutor in Byblos — Personalized Online Tuition",
+    "meta_desc": "IB Math AI SL tutoring in Byblos, covering statistics, modelling, finance, and confident GDC work. One-to-one online lessons on GMT+2 (Beirut time), aligned to Byblos's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-sl",
+      "slug": "ib-math-ai-sl",
+      "name": "IB Math AI SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ai-hl",
+    "country": "Lebanon",
+    "city": "Byblos",
+    "slug": "/ib-math-ai-hl-tutor-byblos/",
+    "title": "IB Math AI HL Tutor in Byblos | Best Online Tuition in Byblos, Lebanon",
+    "h1": "Top IB Math AI HL Tutor in Byblos — Personalized Online Tuition",
+    "meta_desc": "IB Math AI HL tutoring in Byblos, covering advanced statistics, matrices, calculus, and Paper 3 technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Byblos's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ai-hl",
+      "slug": "ib-math-ai-hl",
+      "name": "IB Math AI HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-sl",
+    "country": "Lebanon",
+    "city": "Byblos",
+    "slug": "/ib-math-aa-sl-tutor-byblos/",
+    "title": "IB Math AA SL Tutor in Byblos | Best Online Tuition in Byblos, Lebanon",
+    "h1": "Top IB Math AA SL Tutor in Byblos — Personalized Online Tuition",
+    "meta_desc": "IB Math AA SL tutoring in Byblos, covering functions, algebra, calculus, and clean written exam technique. One-to-one online lessons on GMT+2 (Beirut time), aligned to Byblos's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-sl",
+      "slug": "ib-math-aa-sl",
+      "name": "IB Math AA SL",
+      "level": "DP Standard"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "aa-hl",
+    "country": "Lebanon",
+    "city": "Byblos",
+    "slug": "/ib-math-aa-hl-tutor-byblos/",
+    "title": "IB Math AA HL Tutor in Byblos | Best Online Tuition in Byblos, Lebanon",
+    "h1": "Top IB Math AA HL Tutor in Byblos — Personalized Online Tuition",
+    "meta_desc": "IB Math AA HL tutoring in Byblos, covering proof, series, complex numbers, and Paper 3 strategy. One-to-one online lessons on GMT+2 (Beirut time), aligned to Byblos's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "aa-hl",
+      "slug": "ib-math-aa-hl",
+      "name": "IB Math AA HL",
+      "level": "DP Higher"
+    }
+  },
+  {
+    "type": "city_hub",
+    "course_id": "ia",
+    "country": "Lebanon",
+    "city": "Byblos",
+    "slug": "/ib-math-ia-help-byblos/",
+    "title": "IB Math IA Help in Byblos | Best Online Tuition in Byblos, Lebanon",
+    "h1": "Top IB Math IA Help in Byblos — Personalized Online Tuition",
+    "meta_desc": "IB Math IA support in Byblos, from topic choice through to the final exploration write-up. One-to-one online lessons on GMT+2 (Beirut time), aligned to Byblos's IB World Schools and the May exam session. Book a free trial.",
+    "course": {
+      "id": "ia",
+      "slug": "ib-math-ia",
+      "name": "IB Math IA",
+      "level": "All DP",
+      "type": "help"
+    }
   }
 ]

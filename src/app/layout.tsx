@@ -5,6 +5,7 @@ import "./globals.css";
 import { BrandLogo } from "./BrandLogo";
 import { MobileMenu } from "./MobileMenu";
 import { NavDropdown } from "./NavDropdown";
+import { getFooterLocations } from "./footer-locations";
 import { site } from "./site";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -39,6 +40,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const footerLocations = getFooterLocations();
   return (
     <html lang="en" className={`theme-v2 scroll-smooth ${outfit.variable}`}>
       <body className={`${inter.className} min-h-screen flex flex-col bg-[#f7f4ee] text-[#172033]`}>
@@ -140,6 +142,38 @@ export default function RootLayout({
               </ul>
             </div>
           </div>
+
+          {footerLocations.length > 0 && (
+            <div className="container mx-auto mt-12 max-w-6xl border-t border-white/10 px-6 pt-10">
+              <div className="mb-6 text-sm font-bold uppercase tracking-[0.16em] text-white">
+                IB Maths tutors by location
+              </div>
+              <div className="columns-2 gap-x-6 text-xs sm:columns-3 lg:columns-4">
+                {footerLocations.map((group) => (
+                  <div key={group.country} className="mb-7 break-inside-avoid">
+                    {group.countrySlug ? (
+                      <a href={group.countrySlug} className="font-bold text-slate-200 hover:text-white">
+                        {group.country}
+                      </a>
+                    ) : (
+                      <span className="font-bold text-slate-200">{group.country}</span>
+                    )}
+                    {group.cities.length > 0 && (
+                      <ul className="mt-2 space-y-1.5">
+                        {group.cities.map((location) => (
+                          <li key={location.slug}>
+                            <a href={location.slug} className="text-slate-400 hover:text-white">
+                              {location.city}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="container mx-auto mt-10 max-w-6xl border-t border-white/10 px-6 pt-6 text-center text-xs text-slate-500">
             (c) {new Date().getFullYear()} {site.brandName}. All rights reserved. We are not officially affiliated with
