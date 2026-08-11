@@ -148,7 +148,7 @@ export default function RootLayout({
               <div className="mb-6 text-sm font-bold uppercase tracking-[0.16em] text-white">
                 IB Maths tutors by location
               </div>
-              <div className="columns-2 gap-x-6 text-xs sm:columns-3 lg:columns-4">
+              <div className="columns-2 gap-x-6 text-xs sm:columns-3 lg:columns-4 xl:columns-6">
                 {footerLocations.map((group) => (
                   <div key={group.country} className="mb-7 break-inside-avoid">
                     {group.countrySlug ? (
