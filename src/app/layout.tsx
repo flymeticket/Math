@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Script from "next/script";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import "./globals.css";
 import { BrandLogo } from "./BrandLogo";
@@ -44,6 +45,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`theme-v2 scroll-smooth ${outfit.variable}`}>
       <body className={`${inter.className} min-h-screen flex flex-col bg-[#f7f4ee] text-[#172033]`}>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-HDYTT652KT" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HDYTT652KT');`}
+        </Script>
         <header className="sticky top-0 z-50 border-b border-[#e8e1d6] bg-white/95 backdrop-blur">
           <div className="container mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
             <BrandLogo />
