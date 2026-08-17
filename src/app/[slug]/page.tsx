@@ -1156,7 +1156,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: cleanText(page.title),
     description: cleanText(page.meta_desc),
     alternates: {
-      canonical: `https://ibmathmaster.com${page.slug}`,
+      canonical: `https://www.iblearnersacademy.com${page.slug}`,
     },
   };
 }
