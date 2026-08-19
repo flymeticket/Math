@@ -50,7 +50,8 @@ export default function RootLayout({
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-HDYTT652KT');`}
+gtag('config', 'G-HDYTT652KT');
+gtag('config', 'AW-18394926875');`}
         </Script>
         <header className="sticky top-0 z-50 border-b border-[#e8e1d6] bg-white/95 backdrop-blur">
           <div className="container mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
