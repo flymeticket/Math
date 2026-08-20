@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight, CalendarCheck, CheckCircle2, Mail, MessageCircle, Phone } from "lucide-react";
 import { site } from "../site";
+import { ContactForm } from "../ContactForm";
 
 export const metadata: Metadata = {
   title: "Book a Free IB Maths Trial Session | IB Learners Academy",
@@ -88,7 +89,7 @@ export default function BookSessionPage() {
               </p>
             </div>
 
-            <form action={site.contactFormAction} method="post" className="mt-8 space-y-5">
+            <ContactForm className="mt-8 space-y-5">
               <input type="hidden" name="_subject" defaultValue={site.contactFormSubject} />
               <input type="hidden" name="_template" defaultValue="table" />
               <input type="hidden" name="_captcha" defaultValue="false" />
@@ -178,7 +179,7 @@ export default function BookSessionPage() {
                   <MessageCircle className="h-4 w-4" />
                 </a>
               </div>
-            </form>
+            </ContactForm>
           </div>
         </div>
       </section>

@@ -23,6 +23,7 @@ import {
   Star,
 } from "lucide-react";
 import { site } from "../site";
+import { ContactForm } from "../ContactForm";
 import { SiteNav } from "../SiteNav";
 import { dpCourseInfo, dpSyllabus, dpHours } from "../dp-syllabus";
 import { coursePapers, mypPapers, paperViewerHref } from "../papers";
@@ -2929,7 +2930,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
           <div className="rounded-lg border border-[#ded2c3] bg-white p-5">
             <h3 className="font-extrabold">Book a trial lesson</h3>
             <p className="mt-2 text-sm leading-7 text-[#5d6673]">Receive a focused plan for {page.course.name}.</p>
-            <form action={site.contactFormAction} method="post" className="mt-5 space-y-3">
+            <ContactForm className="mt-5 space-y-3">
               <input type="hidden" name="_subject" defaultValue={`${site.contactFormSubject} - ${page.course.name}`} />
               <input type="hidden" name="_template" defaultValue="table" />
               <input type="hidden" name="_captcha" defaultValue="false" />
@@ -2958,7 +2959,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
               <button type="submit" className="w-full rounded-lg bg-[#0f5b78] px-4 py-3 text-sm font-extrabold text-white">
                 Submit Request
               </button>
-            </form>
+            </ContactForm>
           </div>
 
           <div className="rounded-lg border border-[#ded2c3] bg-[#172033] p-5 text-white">
