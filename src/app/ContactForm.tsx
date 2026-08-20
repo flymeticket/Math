@@ -7,15 +7,21 @@ import { site } from "./site";
 // FormSubmit's /ajax/ endpoint returns JSON instead of redirecting to their page.
 const AJAX_ENDPOINT = site.contactFormAction.replace("formsubmit.co/", "formsubmit.co/ajax/");
 
-// Fires the lead conversion once, only after a successful form submission
-// (never on page view). GA4 gets a generate_lead event; Google Ads gets a
-// conversion once the label is set in site.ts.
+// Fires the lead conversion on a genuine form submission (never on page view).
+// GA4 gets a generate_lead event; Google Ads gets the conversion once the label
+// is set in site.ts. Falls back to pushing to dataLayer if window.gtag is not exposed.
 function fireLeadConversion() {
-  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
-  if (typeof gtag !== "function") return;
-  gtag("event", "generate_lead", { event_category: "enquiry", event_label: "IB Maths enquiry form" });
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
+  const send: (...args: unknown[]) => void =
+    typeof w.gtag === "function"
+      ? w.gtag
+      : (...args: unknown[]) => {
+          w.dataLayer = w.dataLayer || [];
+          w.dataLayer.push(args);
+        };
+  send("event", "generate_lead", { event_category: "enquiry", event_label: "IB Maths enquiry form" });
   if (site.googleAdsConversionLabel) {
-    gtag("event", "conversion", { send_to: `${site.googleAdsId}/${site.googleAdsConversionLabel}` });
+    send("event", "conversion", { send_to: `${site.googleAdsId}/${site.googleAdsConversionLabel}` });
   }
 }
 
@@ -26,6 +32,10 @@ export function ContactForm({ className, children }: { className?: string; child
     event.preventDefault();
     const form = event.currentTarget;
     setStatus("sending");
+    // Required fields are validated by the browser before onSubmit runs, so reaching here
+    // is a genuine completed submission. Record the lead now (never on page view),
+    // independent of the third-party email service's response.
+    fireLeadConversion();
     try {
       const response = await fetch(AJAX_ENDPOINT, {
         method: "POST",
@@ -35,7 +45,6 @@ export function ContactForm({ className, children }: { className?: string; child
       if (response.ok) {
         form.reset();
         setStatus("sent");
-        fireLeadConversion();
       } else {
         setStatus("error");
       }
