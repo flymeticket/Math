@@ -30,6 +30,7 @@ import { coursePapers, mypPapers, paperViewerHref } from "../papers";
 import { TestimonialWall } from "../TestimonialWall";
 import { SchoolsMarquee } from "../SchoolsMarquee";
 import { getMenaLocale } from "../mena-locales";
+import { getGeoContext } from "../geo-data";
 import { mypVideos, dpVideos, mypFeedback, dpFeedback } from "../testimonials";
 
 const dataPath = path.join(process.cwd(), "data", "seo_pages.json");
@@ -1182,6 +1183,7 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
   const mypStagePage = mypAcademicStages.find((stage) => stage.slug === normalizedSlug);
   const locationLabel = page.city || page.state || page.country || mypStagePage?.label || "IB Courses";
   const menaLocale = getMenaLocale(page.city, page.country);
+  const geo = getGeoContext(page.city, page.country);
 
   // Internal linking for location pages: cities within a country, the country hub,
   // and the same location's other IB Maths courses.
@@ -2827,6 +2829,38 @@ export default function DynamicSeoPage({ params }: { params: { slug: string } })
                   </div>
                 ))}
               </div>
+            </section>
+          )}
+
+          {geo && (
+            <section className="rounded-lg border border-[#ded2c3] bg-white p-6 md:p-8">
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#a35c20]">Scheduling &amp; exams</p>
+              <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
+                Online {page.course.name} lessons in {locationLabel}: time zone and exam timing
+              </h2>
+              <p className="mt-5 leading-8 text-[#465160]">
+                {geo.introSentence} {geo.overlapSentence}
+              </p>
+              <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-4">
+                  <div className="text-xs font-bold uppercase tracking-[0.12em] text-[#5d6673]">Time zone</div>
+                  <div className="mt-1 text-sm font-extrabold text-[#172033]">{geo.tzLabel}</div>
+                </div>
+                <div className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-4">
+                  <div className="text-xs font-bold uppercase tracking-[0.12em] text-[#5d6673]">Difference from India</div>
+                  <div className="mt-1 text-sm font-extrabold text-[#172033]">{geo.diffLabel}</div>
+                </div>
+                <div className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-4">
+                  <div className="text-xs font-bold uppercase tracking-[0.12em] text-[#5d6673]">Typical exam session</div>
+                  <div className="mt-1 text-sm font-extrabold text-[#172033]">{geo.examLabel}</div>
+                </div>
+                <div className="rounded-lg border border-[#e8e1d6] bg-[#fbf8f2] p-4">
+                  <div className="text-xs font-bold uppercase tracking-[0.12em] text-[#5d6673]">Region</div>
+                  <div className="mt-1 text-sm font-extrabold text-[#172033]">{geo.region}</div>
+                </div>
+              </div>
+              <p className="mt-6 leading-8 text-[#465160]">{geo.examSentence}</p>
+              {geo.dstNote && <p className="mt-3 text-sm leading-7 text-[#5d6673]">{geo.dstNote}</p>}
             </section>
           )}
 
