@@ -30,7 +30,7 @@ import { coursePapers, mypPapers, paperViewerHref } from "../papers";
 import { TestimonialWall } from "../TestimonialWall";
 import { SchoolsMarquee } from "../SchoolsMarquee";
 import { getMenaLocale } from "../mena-locales";
-import { getGeoContext } from "../geo-data";
+import { getGeoContext, getLocationMetaDescription } from "../geo-data";
 import { mypVideos, dpVideos, mypFeedback, dpFeedback } from "../testimonials";
 
 const dataPath = path.join(process.cwd(), "data", "seo_pages.json");
@@ -1154,11 +1154,24 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!page) return { title: "Page Not Found" };
 
+  const title = cleanText(page.title);
+  // Unique, real-fact meta for location pages (time zone + IB exam session);
+  // falls back to the JSON description for non-location pages.
+  const description =
+    getLocationMetaDescription(page.course.name, page.city, page.country) || cleanText(page.meta_desc);
+  const canonical = `https://www.iblearnersacademy.com${page.slug}`;
+
   return {
-    title: cleanText(page.title),
-    description: cleanText(page.meta_desc),
+    title,
+    description,
     alternates: {
-      canonical: `https://www.iblearnersacademy.com${page.slug}`,
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
     },
   };
 }

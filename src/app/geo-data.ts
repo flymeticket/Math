@@ -162,3 +162,29 @@ export function getGeoContext(city?: string, country?: string): GeoContext | nul
 
   return { tzLabel, diffLabel, dstNote, examLabel, examSentence, region: info.region, overlapSentence, introSentence };
 }
+
+// Builds a unique meta description per location page from real facts (local
+// UTC offset + prevailing IB exam session), so no two pages share the templated
+// default. Returns null for non-location pages (caller falls back to the JSON
+// meta). Three structures rotate by a name hash so same-country cities, which
+// share an offset and session, still get different descriptions.
+export function getLocationMetaDescription(courseName: string, city?: string, country?: string): string | null {
+  const countryKey = (country || "").trim().toLowerCase();
+  const base = COUNTRY[countryKey];
+  if (!base) return null;
+
+  const cityKey = (city || "").trim().toLowerCase();
+  const override = cityKey ? CITY_OVERRIDE[cityKey] : undefined;
+  const info: GeoInfo = { ...base, ...(override || {}) };
+  const label = (city && city.trim()) || country || "";
+  const offset = formatOffset(info.offsetMin);
+  const examShort =
+    info.exam === "may" ? "May IB exams" : info.exam === "november" ? "November IB exams" : "May/Nov IB exams";
+
+  const templates = [
+    `One-to-one ${courseName} tutoring for IB students in ${label}. Live online lessons on local time (${offset}), built around the ${examShort}. Free trial.`,
+    `Online ${courseName} tutoring in ${label}, private and one-to-one. Lessons matched to ${offset} local time and the ${examShort}. Book a free trial.`,
+    `${courseName} tutoring in ${label}, online and one-to-one. Lessons on ${offset} local time, planned for the ${examShort}. Book a free trial.`,
+  ];
+  return templates[nameIndex(label + courseName, templates.length)];
+}
