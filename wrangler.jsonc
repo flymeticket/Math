@@ -1,0 +1,16 @@
+{
+  // Deploy this site as pure static assets (the ./out folder produced by
+  // `npm run build` with output:'export'). No Next.js server adapter / OpenNext:
+  // every route is prerendered HTML, so Cloudflare just serves the files.
+  "name": "math",
+  "compatibility_date": "2024-11-01",
+  "assets": {
+    "directory": "./out",
+    // Site uses trailingSlash:true, so /foo redirects to /foo/ (matches the
+    // sitemap + canonical tags). Files with extensions (sitemap.xml, PDFs) are
+    // unaffected.
+    "html_handling": "force-trailing-slash",
+    // Serve the exported 404 page for unknown paths.
+    "not_found_handling": "404-page"
+  }
+}
