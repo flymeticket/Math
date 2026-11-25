@@ -2,15 +2,12 @@
   // Deploy this site as pure static assets (the ./out folder produced by
   // `npm run build` with output:'export'). No Next.js server adapter / OpenNext:
   // every route is prerendered HTML, so Cloudflare just serves the files.
+  //
+  // Custom domains are attached in the Cloudflare dashboard (Worker ->
+  // Settings -> Domains & Routes), not here: declaring them in config collided
+  // with a pre-existing DNS record in the zone and broke the deploy.
   "name": "math",
   "compatibility_date": "2024-11-01",
-  // Attach the production domain (+ www) to this Worker. On deploy, wrangler
-  // creates the Custom Domains and their proxied DNS records automatically,
-  // now that the iblearnersacademy.com zone is active on this Cloudflare account.
-  "routes": [
-    { "pattern": "iblearnersacademy.com", "custom_domain": true },
-    { "pattern": "www.iblearnersacademy.com", "custom_domain": true }
-  ],
   "assets": {
     "directory": "./out",
     // Site uses trailingSlash:true, so /foo redirects to /foo/ (matches the
